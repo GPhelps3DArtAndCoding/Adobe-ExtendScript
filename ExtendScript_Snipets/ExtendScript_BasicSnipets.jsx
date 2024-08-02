@@ -3,8 +3,8 @@
 /*--------------------------------------------------------------------
 Input Sources for This File
 
-* Adobe Indesign Scripting Tutorial: Create a Basic Sccript
-Youtube, NT Productions, https://www.youtube.com/watch?v=r1WWK7pl6so
+    *Adobe Indesign Scripting Tutorial: Create a Basic Sccript
+    Youtube, NT Productions, https://www.youtube.com/watch?v=r1WWK7pl6so
 
 --------------------------------------------------------------------*/
 
