@@ -1,2 +1,2 @@
-//Basic Alert
+//Alert
 alert("hello there");
