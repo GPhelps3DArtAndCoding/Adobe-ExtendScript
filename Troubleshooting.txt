@@ -1,0 +1,2 @@
+How to Fix & Avoid "You have divergent branches and need to specify how to reconcile them” in Git
+https://www.youtube.com/watch?v=P6SWP31gLNs
