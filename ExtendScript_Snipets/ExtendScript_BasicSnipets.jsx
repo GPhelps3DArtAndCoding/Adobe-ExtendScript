@@ -64,6 +64,13 @@ Nomenclature
     //Access Pages (In)
         var pages = *document*.pages;
 
+    //Dimensions
+        *doc*.documentPreferences.pageWidth = "8.5in";
+        *doc*.documentPreferences.pageHeight = "11in";
+    
+    //Margins
+        *doc*.marginPreference.top = "0.5in"; // This works for .left, .right, .top, and .bottom
+    
     //New Page(s) (In)
         var newPage = pages.add();
 
