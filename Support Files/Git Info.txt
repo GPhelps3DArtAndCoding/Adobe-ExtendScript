@@ -1,0 +1,1 @@
+Branch: In Git, a branch is a new/separate version of the main repository. Source: https://www.w3schools.com/git/git_branch.asp?remote=github
