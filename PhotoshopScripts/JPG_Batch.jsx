@@ -2,7 +2,7 @@
 
 (function(){
 
-	//SCRIPT VARIABLES.
+	//SCRIPT VARIABLES
 	var abort;
 	var title = "Adobe Script Tutorial 2";
 
