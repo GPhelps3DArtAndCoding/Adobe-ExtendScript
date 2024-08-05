@@ -11,7 +11,8 @@ Input Sources for This File
 
 /*
 Nomenclature
-    * (Il): Illustrator
+    * MS Microsoft 
+    *(Il): Illustrator
     * (In): InDesign
     * (Ps): Photoshop
     * *text* means text is a variable
