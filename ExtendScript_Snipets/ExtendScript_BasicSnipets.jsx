@@ -1,5 +1,4 @@
 //Gary Phelps 2024 gpmail1@gmail.com
-//hello today
 
 /*--------------------------------------------------------------------
 Input Sources for This File
