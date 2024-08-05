@@ -1,5 +1,6 @@
 Help
-* How to use GIT Source Control with VSCode - Tutorial / https://www.youtube.com/watch?v=EjHJNjLxE_U
+* How to use GIT Source Control with VSCode - Tutorial, https://www.youtube.com/watch?v=EjHJNjLxE_U
+
 
 
 Terms
