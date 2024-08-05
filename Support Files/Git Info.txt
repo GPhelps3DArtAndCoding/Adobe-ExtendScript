@@ -1,1 +1,6 @@
-Branch: In Git, a branch is a new/separate version of the main repository. Source: https://www.w3schools.com/git/git_branch.asp?remote=github
+Help
+* How to use GIT Source Control with VSCode - Tutorial / https://www.youtube.com/watch?v=EjHJNjLxE_U
+
+
+Terms
+* Branch: In Git, a branch is a new/separate version of the main repository. Source: https://www.w3schools.com/git/git_branch.asp?remote=github
