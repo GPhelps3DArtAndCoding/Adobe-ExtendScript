@@ -1,4 +1,4 @@
-//Gary Phelps 2024 gpmail1@gmail.com yaaaa
+//Gary Phelps 2024 gpmail1@gmail.com ya
 
 /*--------------------------------------------------------------------
 Input Sources for This File
