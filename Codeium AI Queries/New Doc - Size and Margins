@@ -1,5 +1,8 @@
 QUERY
-Adobe ExtendScript to create new InDesign CC file with width of 8.5" height of 11" page set to page 1 with page.marginpreferences.properties set to margins set to top 2" left .5" right .5" bottom .5"
+Adobe ExtendScript to create new InDesign CC file with width of 8.5" 
+height of 11" page set to page 1 with 
+page.marginpreferences.properties set to margins set to top 2" 
+left .5" right .5" bottom .5"
 
 RESULTS
 
