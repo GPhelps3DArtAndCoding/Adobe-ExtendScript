@@ -1,5 +1,2 @@
 Files
 jsconfig.json: This provides compiler options, and type checking in script files.
-
-Support Sites
-Adobe InDesign Scripting Tutorial: Create a Basic Script https://www.youtube.com/watch?v=r1WWK7pl6so
