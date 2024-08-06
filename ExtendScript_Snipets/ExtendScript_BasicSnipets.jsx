@@ -29,6 +29,14 @@ Input Sources for This File
     //Access Active Document [In]
         var document = app.activeDocument;
 
+    //Dimensions [In]
+        var doc = app.documents.add({
+            documentPreferences: {
+                pageWidth: "8.5in",
+                pageHeight: "11in"
+            }
+        });
+    
     //Name Document [In]
         *newDocument*.name = "Summer Ad";
  
@@ -62,18 +70,28 @@ Input Sources for This File
     //Number of Layers [In]
         alert(layer.length);
 
+//Layout
+
+    //Margins [In]
+            var page = doc.pages.item(0);
+            var margin = .5;
+            //using the 2 variables (page and margin) above...
+            page.marginPreferences.properties = { 
+                top : margin,
+                left: margin,
+                right: margin,
+                bottom:margin
+                };
+
 //Pages-------------------------------
     
     //Access Pages [In]
         var pages = *document*.pages;
 
-    //Dimensions
+    //Dimensions [In]
         *doc*.documentPreferences.pageWidth = "8.5in";
         *doc*.documentPreferences.pageHeight = "11in";
-    
-    //Margins
-        *doc*.marginPreference.top = "0.5in"; // This works for .left, .right, .top, and .bottom
-    
+
     //New Page(s) [In]
         var newPage = pages.add();
 
