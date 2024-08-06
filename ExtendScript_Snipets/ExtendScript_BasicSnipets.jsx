@@ -9,31 +9,34 @@ Input Sources for This File
 --------------------------------------------------------------------*/
 
 /*
-Nomenclature
-    * MS Microsoft 
-    *(Il): Illustrator
-    * (In): InDesign
-    * (Ps): Photoshop
-    * *text* means text is a variable
+    Nomenclature
+        * MS Microsoft 
+        * [Il]: Illustrator
+        * [In]: InDesign
+        * [Ps]: Photoshop
+    
+    Variables
+        * Anything after "var" is of course a variable declaration.
+        * I use *text* to indicate a variable that is used in context other than declaration.
 */
 //Basic Commands--------------------
     
-    //Alert (In)
+    //Alert [In]
         alert("hello there");
 
 //Document--------------------------
  
-    //Access Active Document (In)
+    //Access Active Document [In]
         var document = app.activeDocument;
 
-    //Name Document (In)
+    //Name Document [In]
         *newDocument*.name = "Summer Ad";
  
-    //New Document (In)
+    //New Document [In]
         var newDocument = app.documents.add();
 
 //Input
-    //File input
+    //File input [In]
         var inputFile = File("File name or path to file here");
         var inputData;
         *inputFile*.open("r");
@@ -44,24 +47,24 @@ Nomenclature
 //Layers------------------------------
     //INFO: layers is an array, starting at top layer at index 0
     
-    //Access Layer Stack (In)
+    //Access Layer Stack [In]
         var layers = *document*.layers;
 
-    //Name a Layer (In)
+    //Name a Layer [In]
         *myLayer* = "name";
 
-     //New Layer(s) (In)
+     //New Layer(s) [In]
         var newLayer = layers.add();
 
-    //Show/Get Name of a Layer at index i (In)
+    //Show/Get Name of a Layer at index i [In]
         alert(layer[i].name);
     
-    //Number of Layers (In)
+    //Number of Layers [In]
         alert(layer.length);
 
 //Pages-------------------------------
     
-    //Access Pages (In)
+    //Access Pages [In]
         var pages = *document*.pages;
 
     //Dimensions
@@ -71,36 +74,36 @@ Nomenclature
     //Margins
         *doc*.marginPreference.top = "0.5in"; // This works for .left, .right, .top, and .bottom
     
-    //New Page(s) (In)
+    //New Page(s) [In]
         var newPage = pages.add();
 
-    //Number of Pages (In)
+    //Number of Pages [In]
         alert(*pages*.length);
 
 //Swatches-----------------------------
 
-    //Access File Swatches (In)
+    //Access File Swatches [In]
         var swatches = app.swatches;
 
-    //Loop through Swatches, Display Names (In)
+    //Loop through Swatches, Display Names [In]
         for(var=i; i<*swatches*.length; i++){
             alert(swatches[i].name); //returns name of swatch at index i
         }
 
 //Text--------------------------------
 
-    //Create a Text Frame (In)
+    //Create a Text Frame [In]
         var newTextFrame = *newPage*.textFrames.add();
 
-    //Location and Size of Text Frame
+    //Location and Size of Text Frame [In]
         *newTextFrame*.geometricBounds = [y1,x1,y2,x2]
         /* y1,x1 = y,x coordinates of the top left corner
            y2,x2 = y,x coordinates of the bottom right corner */
 
-    //QR Code (In)
+    //QR Code [In]
         *newTextFrame*.createPlainQRCode("url for QR Code here");
 
-    //Text (Content) of Text Frame (put text into it) (In)
+    //Text (Content) of Text Frame (put text into it) [In]
         *newTextFrame*.contents = "Your chosen text here";
         /* Note: The text frame might be really small,
         typically places in the upper, left corner. See "Location
