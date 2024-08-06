@@ -1,1 +1,35 @@
+Both of the codes below worked when I tested them.
 
+Website
+var doc = app.documents.add({
+    documentPreferences: {
+        pageWidth: "8.5in",
+        pageHeight: "11in"
+    }
+});
+
+var page = doc.pages.item(0);
+page.marginPreferences.properties = {
+    top: "2in",
+    left: "0.5in",
+    right: "0.5in",
+    bottom: "0.5in"
+};
+
+
+VS Code Plugin
+// Create a new document
+var doc = app.documents.add();
+
+// Set the page size
+doc.documentPreferences.pageWidth = "8.5 in";
+doc.documentPreferences.pageHeight = "11 in";
+
+// Set the margins
+var marginPrefs = doc.pages[0].marginPreferences;
+marginPrefs.properties = {
+  top: "2 in",
+  left: "0.5 in",
+  right: "0.5 in",
+  bottom: "0.5 in"
+};
