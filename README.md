@@ -3,6 +3,7 @@ Other options for scripting for Adobe Apps include <a href="https://learn.micros
 
 IDE: <a href="https://code.visualstudio.com/">MS Visual Studio Code (aka VS Code)</a>
 
-VS Code Extensions for Adobe ExtendScript 
+VS CODE EXTENSIONS USED
 * ExtendScript
 * ExtendScript Development Pack
+* Codeium: AI Coding Autocomplete and Chat for Python, JavaScript, Typescript, Java, Go, and More
