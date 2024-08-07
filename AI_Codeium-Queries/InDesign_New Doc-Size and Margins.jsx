@@ -10,7 +10,7 @@ QUERY
 //Both of the codes below worked when I tested them.
 
 //Website-----------------------------------------------------------
-// Create a new document and set page size
+//Create a new document and set page size
 var doc = app.documents.add({
     documentPreferences: {
         pageWidth: "8.5in",
@@ -28,15 +28,15 @@ page.marginPreferences.properties = {
 
 
 //VS Code Extension--------------------------------------------------
-// Create a new document
+//Create a new document
 var doc = app.documents.add();
 
-// Set the page size
+//Set the page size
 doc.documentPreferences.pageWidth = "8.5 in";
 doc.documentPreferences.pageHeight = "11 in";
 
-// Set the margins I prefer this way over the 
-// website's method as it sets up more on the first line
+//Set the margins I prefer this way over the 
+//website's method as it sets up more on the first line
 var marginPrefs = doc.pages[0].marginPreferences;
 marginPrefs.properties = {
   top: "2 in",
@@ -46,10 +46,10 @@ marginPrefs.properties = {
 };
 
 //My Way --------------------------------------------------
-// Create a new document
+//Create a new document
 var doc = app.documents.add();
 
-// Global Variables
+//Global Variables
 var pageWidth = doc.documentPreferences.pageWidth;
 var pageHeight = doc.documentPreferences.pageHeight
 var marginPrefs = doc.pages[0].marginPreferences;
@@ -59,12 +59,11 @@ var leftMargin = marginDefault;
 var rightMargin = marginDefault;
 var bottomMargin = marginDefault;
 
-// Set the page size
+//Set the page size
 pageWidth = "8.5 in";
 pageHeight = "11 in";
 
-// Set the margins I prefer this way over the 
-// website's method as it sets up more on the first line
+//Set the margins
 marginPrefs.properties = {
   top: topMargin,
   left: leftMargin,
