@@ -163,7 +163,8 @@ Input Sources for This File
 
     //Create a Text Frame [In]
         
-        var newTextFrame = *newPage*.textFrames.add();
+        var newTextLayer = *doc*.textFrames.add(); //[Il]
+        var newTextFrame = *newPage*.textFrames.add(); //[In]
 
     //Location and Size of Text Frame [In]
         
