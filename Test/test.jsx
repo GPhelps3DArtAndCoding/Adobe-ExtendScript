@@ -1,20 +1,6 @@
-var doc = app.documents.add({
-    documentPreferences: {
-        pageWidth: "6in",
-        pageHeight: "11in",
-        }
-});
+//Create a new document
+var doc = app.documents.add();
 
-    var page = doc.pages.item(0);
+//import file size and margin settings
+#include "../includes/letter_halfInchMargins.jsx";
 
-    page.marginPreferences.properties = {
-
-        toplpo : 30,
-
-        left: 30,
-
-        right: 30,
-
-        bottom:30
-
-        };
