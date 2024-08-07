@@ -12,7 +12,7 @@ Other options for scripting for Adobe Apps include <a href="https://learn.micros
 * Types for Adobe
 
 <b>Other Resources</b>
-* CEP-Resources (forked repository): Adobe CEP Resources. 
+* CEP-Resources (<a href="https://github.com/Zuldaris/CEP-Resources">forked repository</a>): Adobe CEP Resources. 
   * Photoshop Scripting: Documentation/Product specific Documentation/Photoshop Scripting.
   * CEP for InDesign Developers (PDF): Documentation/Product specific Documentation/
   * CEP 9 Extensions Cookbook Bridge (PDF): Documentation/Product specific Documentation/
