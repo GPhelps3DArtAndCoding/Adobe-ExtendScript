@@ -1,6 +1,6 @@
 Gary Phelps 2024 gpmail1@gmail.com
 
-<b>Input Sources for This File</b>
+<b>Input Sources for This File</b><br>
     * <a href="https://www.youtube.com/watch?v=r1WWK7pl6so">Adobe InDesign Scripting Tutorial: Create a Basic Script</a> - Youtube, NT Productions 
 
 --------------------------------------------------------------------
