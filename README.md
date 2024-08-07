@@ -19,6 +19,10 @@ Other options for scripting for Adobe Apps include <a href="https://learn.micros
 * ExtendScript Resources
   * <a href="https://www.youtube.com/@wc7">William Campbell, YouTube</a>: William has a large number of videos that expand into other areas such as system administration, and design and prepress. I watched several of his ExtendScript videos and from my experience, he does an excellent job as an instructor. The pacing is not rushed, and he explains things well even for a beginner like me!
 
+<b>Future Plans</b>
+* JSXBIN (used to write plug-ins for Adobe software)
+  * <a href="https://marketplace.visualstudio.com/items?itemName=motionland.texttojsxbin">TextToJSXBIN plug-in for VS Code</b>
+
 <b>Notes</b>
 1.  ExtendScript Debugger only work on Macs if you run VS Code in Rosetta. <a href="https://support.apple.com/en-us/102527#:~:text=Rosetta%20is%20not%20an%20app,it%20like%20you%20normally%20would.">This webpage</a> explains how to do that. On that page the
     instructions under "Does your app need Rosetta?" is what worked for me. VS Code will run slower though.
