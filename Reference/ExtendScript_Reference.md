@@ -11,7 +11,7 @@ Gary Phelps 2024 gpmail1@gmail.com
     * [In]: InDesign<br>
     * [Ps]: Photoshop
 
-<b>Variables</b>
+<b>Variables</b><br>
     * Anything after "var" is of course a variable declaration.
     * I use *text* to indicate a variable that is used in context other than declaration.
 
@@ -19,7 +19,7 @@ Gary Phelps 2024 gpmail1@gmail.com
 
   * Alert [In]
 
-      alert("hello there");
+      <code>alert("hello there");</code>
 
 <b>Document</b>
  
