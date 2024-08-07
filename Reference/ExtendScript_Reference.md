@@ -25,97 +25,97 @@ Gary Phelps 2024 gpmail1@gmail.com
  
   * Access Active Document</b> [In]
         
-      var document = app.activeDocument;
+      <code>var document = app.activeDocument;</code>
 
   * Dimensions [In]
           
-      var doc = app.documents.add({
+      <code>var doc = app.documents.add({
           documentPreferences: {
               pageWidth: "8.5in",
               pageHeight: "11in"
           }
-      });
+      });</code>
       
   * Name Document [In]
           
-      *newDocument*.name = "Summer Ad";
+      <code>*newDocument*.name = "Summer Ad";</code>
    
   * New Document [In]
           
-      var newDocument = app.documents.add();
+      <code>var newDocument = app.documents.add();</code>
 
 <b>Input</b>
 
   * File input [In]
           
-      var inputFile = File("File name or path to file here");
+     <code>var inputFile = File("File name or path to file here");
       var inputData;
       *inputFile*.open("r");
       *inputData* = *inputFile*.read().toString();
-      *inputFile*.close();
-      //see https://www.youtube.com/watch?v=r1WWK7pl6so @ 15:47
+      *inputFile*.close();</code>
+      see https://www.youtube.com/watch?v=r1WWK7pl6so @ 15:47
 
 <b>Layers</b>
 INFO: Layers are a collection (like an array), where the top layer is index 0.
     
   * Access Layer Stack [In]
           
-      var layers = *document*.layers;
+      <code>var layers = *document*.layers;</code>
 
   * Create New Layer(s) [In]
 
-      var newLayer = *doc*.layers.add();
-      var newLayer = *doc*.layers.add({name: "below top layer"});
+      <code>var newLayer = *doc*.layers.add();
+      var newLayer = *doc*.layers.add({name: "below top layer"});</code>
 
   * Create New Layer(s) inside a Layer, at index "i" [Il]
 
-      var subLayer =*doc*.layers[i].layers.add();
+      <code>var subLayer =*doc*.layers[i].layers.add();
       subLayer.name = "layer" + i;} //optional
 
       for(var addLayers = 0; addLayers<10; addLayers++){
       var newLayer = *doc*.layers[0].layers.add();
       newLayer.name = "LayerName" + (addLayers+1);
       //all layers will have the LayerName
-      }
+      }</code>
 
   * Find a Layer
           
-      //Where "x" is the name of the layer you are looking for...
+      <code>//Where "x" is the name of the layer you are looking for...
       var layer = doc.layers.getByName("x"); //[Il][Ps]
       var layer = doc.layers.itemByName("x"); //[In]
-      alert(layer.name); //[Il][In][Ps] optional but provides textual ouput
+      alert(layer.name); //[Il][In][Ps] optional but provides textual ouput</code>
 
     * Lock/Unlock Layer [Il][In]
           
-        doc.layers[0].locked = true; //locks top layer
+        <code>doc.layers[0].locked = true; //locks top layer</code>
     
   * Name a Layer [In]
         
-        //name it when creating it
+       <code> //name it when creating it
         var newLayer = doc.layers.add({name: "below top layer"});
         //or leave out the "{name:"..."} above and add...
-        *newLayer*.name = "name";
+        *newLayer*.name = "name";</code>
 
   * New Layer(s) (See Create New Layer(s) above)
 
   * Number of Layers [In]
        
-     alert(layer.length);
-
-    //Show/Get Name of a Layer
+     <code>alert(layer.length);</code>
+     
+    * Show/Get Name of a Layer
         
-        alert(layer[i].name); //at index i [In]
-        alert(*layer*.name); //of specific layer [Il][In][Ps]
+        <code>alert(layer[i].name); //at index i [In]
+        alert(*layer*.name); //of specific layer [Il][In][Ps]</code>
     
-    //Visibility of Layer [Il][In]
+    * Visibility of Layer [Il][In]
         
-        doc.layers[0].visible = false; //turns off top layer visibility
+        <code>doc.layers[0].visible = false; //turns off top layer visibility</code>
 
 <b>Layout</b>
 
   * Margins [In]
            
-        var page = doc.pages.item(0);
+       <code>var page = doc.pages.item(0);
         var margin = .5;
         //using the 2 variables (page and margin) above...
         page.marginPreferences.properties = { 
@@ -123,60 +123,60 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
             left: margin,
             right: margin,
             bottom:margin
-            };
+            };</code>
 
 <b>Pages</b>
     
   * Access Pages [In]
        
-        var pages = *document*.pages;
+        <code>var pages = *document*.pages;</code>
 
   * Dimensions [In]
        
-        *doc*.documentPreferences.pageWidth = "8.5in";
-        *doc*.documentPreferences.pageHeight = "11in";
+        <code>*doc*.documentPreferences.pageWidth = "8.5in";
+        *doc*.documentPreferences.pageHeight = "11in";</code>
 
   * New Page(s) [In]
         
-        var newPage = pages.add();
+        <code>var newPage = pages.add();</code>
 
   * Number of Pages [In]
         
-        alert(*pages*.length);
+        <code>alert(*pages*.length);</code>
 
 <b>Swatches</b>
 
   * Access File Swatches [In]
         
-        var swatches = app.swatches;
+        <code>var swatches = app.swatches;</code>
 
   * Loop through Swatches, Display Names [In]
         
-        for(var i=0; i<*swatches*.length; i++){
+        <code>for(var i=0; i<*swatches*.length; i++){
             alert(swatches[i].name); //returns name of swatch at index i
-        }
+        }</code>
 
 <b>Text</b>
 
   * Create a Text Frame [In]
         
-        var newTextLayer = *doc*.textFrames.add(); //[Il]
-        var newTextFrame = *newPage*.textFrames.add(); //[In]
+        <code>var newTextLayer = *doc*.textFrames.add(); //[Il]
+        var newTextFrame = *newPage*.textFrames.add(); //[In]</code>
 
   * Location and Size of Text Frame [In]
         
-        *newTextFrame*.geometricBounds = [y1,x1,y2,x2]
+        <code>*newTextFrame*.geometricBounds = [y1,x1,y2,x2]
         /* y1,x1 = y,x coordinates of the top left corner
-           y2,x2 = y,x coordinates of the bottom right corner */
+           y2,x2 = y,x coordinates of the bottom right corner */</code>
 
   * QR Code [In]
        
-        *newTextFrame*.createPlainQRCode("url for QR Code here");
+        <code>*newTextFrame*.createPlainQRCode("url for QR Code here");</code>
 
   * Text (Content) of Text Frame (put text into it) [In]
         
-        *newTextFrame*.contents = "Your chosen text here";
+        <code>*newTextFrame*.contents = "Your chosen text here";
         /* Note: The text frame might be really small,
         typically places in the upper, left corner. See "Location
         and Size of Text Frame" above to create text frames of a 
-        specific size. */
+        specific size. */</code>
