@@ -6,7 +6,7 @@ Gary Phelps 2024 gpmail1@gmail.com
 --------------------------------------------------------------------
 
 <b>Nomenclature</b><br>
-    * MS Microsoft<br> 
+    * [MS] Microsoft<br> 
     * [Il]: Illustrator<br>
     * [In]: InDesign<br>
     * [Ps]: Photoshop
