@@ -85,7 +85,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
       var layer = doc.layers.itemByName("x"); //[In]
       alert(layer.name); //[Il][In][Ps] optional but provides textual ouput</code>
 
-    * Lock/Unlock Layer [Il][In]
+  * Lock/Unlock Layer [Il][In]
           
         <code>doc.layers[0].locked = true; //locks top layer</code>
     
@@ -102,12 +102,12 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
        
      <code>alert(layer.length);</code>
      
-    * Show/Get Name of a Layer
+  * Show/Get Name of a Layer
         
         <code>alert(layer[i].name); //at index i [In]
         alert(*layer*.name); //of specific layer [Il][In][Ps]</code>
     
-    * Visibility of Layer [Il][In]
+  * Visibility of Layer [Il][In]
         
         <code>doc.layers[0].visible = false; //turns off top layer visibility</code>
 
