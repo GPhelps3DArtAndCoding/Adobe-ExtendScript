@@ -1,6 +1,6 @@
 var doc = app.documents.add({
     documentPreferences: {
-        pageWidth: "8.5in",
+        pageWidth: "6in",
         pageHeight: "11in",
         }
 });
@@ -9,7 +9,7 @@ var doc = app.documents.add({
 
     page.marginPreferences.properties = {
 
-        top : 30,
+        toplpo : 30,
 
         left: 30,
 

@@ -4,6 +4,15 @@ Other options for scripting for Adobe Apps include <a href="https://learn.micros
 IDE: <a href="https://code.visualstudio.com/">MS Visual Studio Code (aka VS Code)</a>
 
 VS CODE EXTENSIONS USED
-* ExtendScript
-* ExtendScript Development Pack
 * Codeium: AI Coding Autocomplete and Chat for Python, JavaScript, Typescript, Java, Go, and More
+* ESLint
+* ExtendScript
+* ExtendScript Debugger (see Note 1 below)
+* ExtendScript Development Pack
+* Types for Adobe
+
+
+Notes
+1.  ExtendScript Debugger only work on Macs if you run VS Code in Rosetta. <a href="https://support.apple.com/en-us/102527#:~:text=Rosetta%20is%20not%20an%20app,it%20like%20you%20normally%20would.">Here is how you do that</a>. On that page the
+    instructions under "Does your app need Rosetta?" is what worked for me. VS Code will run slower though.
+    Here is how to set up and run the the ExtendScript Debugger extension.
