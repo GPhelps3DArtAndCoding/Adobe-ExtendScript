@@ -16,6 +16,8 @@ Other options for scripting for Adobe Apps include <a href="https://learn.micros
   * Photoshop Scripting: Documentation/Product specific Documentation/Photoshop Scripting.
   * CEP for InDesign Developers (PDF): Documentation/Product specific Documentation/
   * CEP 9 Extensions Cookbook Bridge (PDF): Documentation/Product specific Documentation/
+* ExtendScript Resources
+  * <a href="https://www.youtube.com/@wc7">William Campbell, YouTube</a>: William has a large number of videos that expand into other areas such as system administration, and design and prepress. I watched several of his ExtendScript video and he does an excellent job as an instructor. The pacing is not rushed, and he explains things well even for a beginner like me!
 
 <b>Notes</b>
 1.  ExtendScript Debugger only work on Macs if you run VS Code in Rosetta. <a href="https://support.apple.com/en-us/102527#:~:text=Rosetta%20is%20not%20an%20app,it%20like%20you%20normally%20would.">This webpage</a> explains how to do that. On that page the
