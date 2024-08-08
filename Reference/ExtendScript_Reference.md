@@ -165,26 +165,23 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
         var selectNewestObject = app.activeDocument.selection[x];
 
-<b>Swatches</b>
+<b>Shapes</b>
 
-* Access File Swatches [In]
+* Rectangle[Il]
+
+        //Define rectangle properties
+        var rectWidth = 200;    var rectX = 0;
+        var rectHeight = 100;   var rectY = 50;
+
+        //Create a rectangle path item
+        var rect = doc.pathItems.rectangle(rectY, rectX, rectWidth, rectHeight);
         
-        var mySwatches = app.swatches;
-
-* Loop through Swatches, Display Names [In]
-        
-        var mySwatches = app.swatches;
-        for(var i=0; i<mySwatches.length; i++){
-            alert(mySwatches[i].name); //returns name of swatch at index i
-        }
-
 <b>Stroke</b>
     
 * Stroke[Il]
     
         itemVarName.stroked = true; 
-        //true: on/show stroke, false: is off/no stroke
-
+        //true: on/show stroke, false: off/no stroke
     
 * Stroke Color[Il]
 
@@ -208,6 +205,19 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 * Stroke Weight/Width[Il]
 
         itemVarName.strokeWidth = 1;
+
+<b>Swatches</b>
+
+* Access File Swatches [In]
+        
+        var mySwatches = app.swatches;
+
+* Loop through Swatches, Display Names [In]
+        
+        var mySwatches = app.swatches;
+        for(var i=0; i<mySwatches.length; i++){
+            alert(mySwatches[i].name); //returns name of swatch at index i
+        }
 
 <b>Text</b>
 
