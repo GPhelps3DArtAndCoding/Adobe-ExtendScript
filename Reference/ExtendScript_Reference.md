@@ -17,7 +17,7 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Basic Commands</b>
 
-* Alert [In]
+* Alert [Il][In]
 
         alert("hello there");
 
@@ -28,7 +28,7 @@ Gary Phelps 2024 gpmail1@gmail.com
         var document = app.activeDocument;
 
 * Dimensions [In]
-          
+
         var doc = app.documents.add({
             documentPreferences: {
                 pageWidth: "8.5in",
@@ -92,7 +92,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         doc.layers[0].locked = true; //locks top layer
     
 * Name a Layer [In]
-        
+
          //name it when creating it
         var newLayer = doc.layers.add({name: "below top layer"});
         //or leave out the "{name:"..."} above and add...
@@ -171,16 +171,33 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 <b>Stroke</b>
     
-* Stroke
+* Stroke[Il]
     
         rect.stroked = true; 
         /*true is on/show stroke
         false is off/no stroke
         */
     
-* Stroke Color
+* Stroke Color[Il]
+
+        //RGB, colors range from 0 (0%) to 255 (100%)
+        var myColor = new RGBColor();
+        myColor.red = 255;
+        myColor.green = 0;
+        myColor.blue = 0;
+        rect.strokeColor = redColor;
+
+        //CMYK, colors rang from 0% to 100%
+        var myColor = new CMYKColor();
+        myColor.cyan = 100;
+        myColor.magenta = 0;
+        myColor.yellow = 0;
+        myColor.black = 0;
+        rect.strokeColor = myColor;
     
-* Stroke Weight/Width
+* Stroke Weight/Width[Il]
+
+        *itemName*.strokeWidth = 1;
 
 <b>Text</b>
 

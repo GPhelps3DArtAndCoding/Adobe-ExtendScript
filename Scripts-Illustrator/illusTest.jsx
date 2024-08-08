@@ -1,7 +1,5 @@
 // Create a new document
 var doc = app.documents.add();
-doc.rulerUnits = RulerUnits.Inches;
-
 
 // Define rectangle properties
 var rectWidth = 200;  // Width of the rectangle
@@ -20,16 +18,17 @@ blueColor.blue = 255;
 rect.fillColor = blueColor;
 
 // Set the stroke color to red
-var redColor = new RGBColor();
-redColor.red = 255;
-redColor.green = 0;
-redColor.blue = 0;
-rect.strokeColor = redColor;
+var myColor = new CMYKColor();
+myColor.cyan = 0;
+myColor.magenta = 0;
+myColor.yellow = 100;
+myColor.black = 0;
+rect.strokeColor = myColor;
 rect.strokeWidth = 5;
 
 // Set the stroke color to none (if you want no stroke)
 rect.stroked = true;
 
 // Save and close the document (optional)
-// doc.saveAs(File("~/Desktop/BlueRectangle.ai"));
+//doc.saveAs(File());
 // doc.close();
