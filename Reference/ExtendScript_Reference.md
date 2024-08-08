@@ -17,7 +17,7 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Basic Commands</b>
 
-Alert [In]
+*Alert [In]
 
         <code>alert("hello there");</code>
 
