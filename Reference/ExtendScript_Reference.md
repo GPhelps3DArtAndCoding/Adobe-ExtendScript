@@ -48,11 +48,11 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 * File input [In]
           
-        <code>var inputFile = File("File name or path to file here");
+        var inputFile = File("File name or path to file here");
         var inputData;
         *inputFile*.open("r");
         *inputData* = *inputFile*.read().toString();
-        *inputFile*.close();</code>
+        *inputFile*.close();
         see https://www.youtube.com/watch?v=r1WWK7pl6so @ 15:47
 
 <b>Layers</b></br>
