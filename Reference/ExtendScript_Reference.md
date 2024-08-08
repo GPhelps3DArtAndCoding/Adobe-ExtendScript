@@ -23,17 +23,18 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Document</b>
  
-    * Access Active Document [In]
-<code>var document = app.activeDocument;</code>
+* Access Active Document [In]
+        
+        <code>var document = app.activeDocument;</code>
 
-    * Dimensions [In]
+* Dimensions [In]
           
-        <code>var doc = app.documents.add({
-            documentPreferences: {
-                pageWidth: "8.5in",
-                pageHeight: "11in"
-            }
-        });</code>
+    <code>var doc = app.documents.add({
+        documentPreferences: {
+            pageWidth: "8.5in",
+            pageHeight: "11in"
+        }
+    });</code>
       
     * Name Document [In]
           
