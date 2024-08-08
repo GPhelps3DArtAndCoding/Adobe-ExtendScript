@@ -19,7 +19,7 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 * Alert [In]
 
-        <code>alert("hello there");</code>
+        alert("hello there");
 
 <b>Document</b>
  
