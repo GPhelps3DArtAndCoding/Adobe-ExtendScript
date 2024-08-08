@@ -73,7 +73,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
       var subLayer = *doc*.layers[i].layers.add(); //Change i to the index you want, where 0 will be the top layer.
       subLayer.name = "layer" + i; //optional
 
-      //Creating multiple sublayers. Set middle option in for loop to addlayer<x to make x sublayers.
+      //Creating multiple sublayers. Set middle option in for loop to addLayers<x to make x sublayers.
       for(var addLayers = 0; addLayers<10; addLayers++){
       var newLayer = *doc*.layers[0].layers.add();
       newLayer.name = "LayerName" + (addLayers+1);
