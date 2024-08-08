@@ -17,15 +17,14 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Basic Commands</b>
 
-    * Alert [In]<br>
+    * Alert [In]
 
         <code>alert("hello there");</code>
 
 <b>Document</b>
  
-    * Access Active Document</b> [In]
-        
-        <code>var document = app.activeDocument;</code>
+    * Access Active Document [In]
+<code>var document = app.activeDocument;</code>
 
     * Dimensions [In]
           
