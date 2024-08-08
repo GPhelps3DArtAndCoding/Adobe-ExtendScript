@@ -62,16 +62,18 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
           
       <code>var layers = *document*.layers;</code>
 
-  * Create New Layer(s) [In]
+  * Create New Layer(s)
 
-      <code>var newLayer = *doc*.layers.add();
-      var newLayer = *doc*.layers.add({name: "below top layer"});</code>
+      <code>var newLayer = *doc*.layers.add(); //[Il][In] create
+      var newLayer = *doc*.layers.add({name: "below top layer"}); //[In]create and name</code>
 
-  * Create New Layer(s) inside a Layer, at index "i" [Il]
+  * Create New Sublayer(s) inside a Layer, at index "i" [Il]
 
-      <code>var subLayer =*doc*.layers[i].layers.add();
-      subLayer.name = "layer" + i;} //optional
+      <code>//Creating 1 Sublayer
+      var subLayer =*doc*.layers[i].layers.add(); //Change i to the index you want, where 0 will be the top layer.
+      subLayer.name = "layer" + i; //optional
 
+      //Creating multiple sublayers
       for(var addLayers = 0; addLayers<10; addLayers++){
       var newLayer = *doc*.layers[0].layers.add();
       newLayer.name = "LayerName" + (addLayers+1);
