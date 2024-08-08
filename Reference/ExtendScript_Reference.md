@@ -29,12 +29,12 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 * Dimensions [In]
           
-    <code>var doc = app.documents.add({
-        documentPreferences: {
-            pageWidth: "8.5in",
-            pageHeight: "11in"
-        }
-    });</code>
+        <code>var doc = app.documents.add({
+            documentPreferences: {
+                pageWidth: "8.5in",
+                pageHeight: "11in"
+            }
+        });</code>
       
     * Name Document [In]
           
