@@ -169,7 +169,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
             alert(swatches[i].name); //returns name of swatch at index i
         }</code>
 
-<b>Stroke</a>
+<b>Stroke</b>
     
     * Stroke
     
