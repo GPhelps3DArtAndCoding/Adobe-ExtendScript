@@ -13,7 +13,7 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Variables</b><br>
     * Anything after "var" is of course a variable declaration.
-    * I use "varName" or "typeVarName" (where "type" will be an object type name) if it applies to a object type to indicate a variable that is used in context other than declaration.
+    * I use "varName" or "typeVarName" (where "type" will be an object type name) if it applies to a object type to indicate a variable that is used in context other than declaration. Also, it sometimes works better to just call something "my..." such as "myNewSwatch".
 
 <b>Basic Commands</b>
 
