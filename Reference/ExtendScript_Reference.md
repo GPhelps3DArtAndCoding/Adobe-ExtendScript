@@ -174,8 +174,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 * Stroke[Il]
     
         rect.stroked = true; 
-true: on/show stroke
-false: is off/no stroke
+        //true: on/show stroke, false: is off/no stroke
 
     
 * Stroke Color[Il]
