@@ -13,7 +13,7 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Variables</b><br>
     * Anything after "var" is of course a variable declaration.
-    * I use "*text*" to indicate a variable that is used in context other than declaration.
+    * I use "*" before and after a word to indicate a variable that is used in context other than declaration.
 
 <b>Basic Commands</b>
 
