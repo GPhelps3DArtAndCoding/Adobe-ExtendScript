@@ -13,7 +13,12 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Variables</b><br>
     * Anything after "var" is of course a variable declaration.
-    * I use "varName" or "typeVarName" (where "type" will be an object type name) if it applies to a object type to indicate a variable that is used in context other than declaration. Also, it sometimes works better to just call something "my..." such as "myNewSwatch".
+    * In any item where variables are created, I  will just use them in further lines like you would when writing your own code.
+    * In any other scenario, I will do one of these options:
+      * Use "varName" or "typeVarName" (where "type" will be an object type name). 
+      * Use "my..." such as "myNewSwatch".
+  
+This is all to remove confusion on what is a variable name versus what is an actual element inherent in the actual languages, such as names of objects or object methods.
 
 <b>Basic Commands</b>
 
