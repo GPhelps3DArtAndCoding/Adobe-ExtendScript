@@ -86,7 +86,14 @@ This is all to remove confusion on what is a variable name versus what is an act
         else if (res == lowRes){
                 alert("Res is " + res + "dpi for screen.");
                 var doc = app.documents.add(width, height, res, "File Name", NewDocumentMode.RGB, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
-       
+
+* Name Document (used in scripts that create a new document) [IL]
+  
+        var width = 8.5*72;
+        var height = 11*72;
+        var doc = app.documents.add(DocumentColorSpace.RGB, width, height, 1);
+        //The file must be saved to give it a name
+        doc.saveAs(File("pathToSaveLocation/fileName.ai"));       
       
 * Name Document (used in scripts that create a new document) [IN]
           
@@ -100,15 +107,6 @@ This is all to remove confusion on what is a variable name versus what is an act
             }
         });
         doc.name = "Summer Ad";
-
-* Name Document (used in scripts that create a new document) [IL]
-  
-        var width = 8.5*72;
-        var height = 11*72;
-        var doc = app.documents.add(DocumentColorSpace.RGB, width, height, 1);
-        //The file must be saved to give it a name
-        doc.saveAs(File("pathToSaveLocation/fileName.ai"));
-
 
 * Name Document (used in scripts that create a new document) [PS]
 
