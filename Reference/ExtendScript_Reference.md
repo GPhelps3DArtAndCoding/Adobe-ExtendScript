@@ -95,14 +95,14 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 * Name Document (used in scripts that create a new document)
   
-        [IL]
+        <b>[IL]</b>
         var width = 8.5*72;
         var height = 11*72;
         var doc = app.documents.add(DocumentColorSpace.RGB, width, height, 1);
         //The file must be saved to give it a name
         doc.saveAs(File("pathToSaveLocation/fileName.ai"));
 
-        [IN]  
+        <b>[IN]</b>[
         doc.name = "Summer Ad"; [IN]
         
         //example
@@ -114,7 +114,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         });
         doc.name = "Summer Ad";
 
-        [PS]
+        <b>[[PS]</b>[
         var width = 3; var height = 11;
         //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
         var doc = app.documents.add(width, height, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
