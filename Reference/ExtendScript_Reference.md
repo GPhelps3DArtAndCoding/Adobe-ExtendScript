@@ -47,6 +47,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         doc.artboards[0].artboardRect = [0, height, width, 0];
 
 * Create Document, Set Dimensions [In]
+  
         var doc = app.documents.add({
             documentPreferences: {
                 pageWidth: "8.5in",
