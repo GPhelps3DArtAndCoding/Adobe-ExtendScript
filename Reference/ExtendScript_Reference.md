@@ -80,9 +80,9 @@ This is all to remove confusion on what is a variable name versus what is an act
                 var doc = app.documents.add(width, height, res, "File Name", NewDocumentMode.RGB, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
        
       
-* Name Document (used in scripts that create a new document)
+* Name Document (used in scripts that create a new document) [In]
           
-        docVarName.name = "Summer Ad"; [In]
+        doc.name = "Summer Ad"; [In]
         
         //example
         var doc = app.documents.add({
@@ -93,8 +93,10 @@ This is all to remove confusion on what is a variable name versus what is an act
         });
         doc.name = "Summer Ad";
 
-        //Parameter(input variable) of the .add method. Type is String (text). [PS]
+* Name Document (used in scripts that create a new document) [Ps]
+
         var width = 3; var height = 11;
+        //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
         var doc = app.documents.add(width, height, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
         doc.rulerUnits = Units.INCHES;
 

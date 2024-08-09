@@ -1,25 +1,20 @@
-/* Below are scripts that have been tested (with program(s) tested in in brackets []:
+<b>Below are scripts that have been tested (with program(s) tested in in brackets []:
 
 * [Il] = Illustrator
 * [Id] = InDesign
 * [Ps] = Photoshop)
 
-* They are then placed into the Reference/ExtendScript_Reference.md file. 
+They are then placed into the Reference/ExtendScript_Reference.md file. </b>
 
-* Scripts below that are tested and do not need to be run again in future tests
-are moved inline with their respective comments.
+* Alert [Il][In][Ps] alert("hello there" + docx);
 
-*/
+<b>Document(s)</b>
 
-//Alert [Il][In][Ps] alert("hello there" + docx);
+* Access Active Document [Il][In][Ps] var docx = app.activeDocument;
 
-//Document(s)
+* Create New Document [Il][In][Ps] var doc = app.documents.add();
 
-//Access Active Document [Il][In][Ps] var docx = app.activeDocument;
-
-//Create New Docuement [Il][In][Ps] var doc = app.documents.add();
-
-/*Create New Document of Specified Size [Il]
+* Create New Document of Specified Size [Il]
     var doc = app.documents.add(); // Dimensions in points (1 inch = 72 points)
     var width = 8.5 * 72;
     var height = 10 * 72;
@@ -28,15 +23,15 @@ are moved inline with their respective comments.
     doc.artboards[0].artboardRect = [0, height, width, 0];
     */
 
-/*Create New Document of Specified Size [In]
+* Create New Document of Specified Size [In]
     var doc = app.documents.add({
         documentPreferences: {
             pageWidth: "8.5in",
             pageHeight: "11in"
         }
     });
-*/
-/*Create New Document of Specified Size [PS]
+
+* Create New Document of Specified Size [PS]
     var doc = app.documents.add(8.5, 11, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
     doc.rulerUnits = Units.INCHES;
 
@@ -57,16 +52,29 @@ are moved inline with their respective comments.
         var doc = app.documents.add(width, height, res, "File Name", NewDocumentMode.RGB, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
         doc.rulerUnits = Units.INCHES;
     }
-*/
 
+* Name Document (used in scripts that create a new document) [In]
+          
+    docVarName.name = "Summer Ad"; 
+        
+    //example
+    doc.name = "Summer Ad";
 
-       var doc = app.documents.add({
-            documentPreferences: {
-                pageWidth: "8.5in",
-                pageHeight: "11in",
-            }
-        });
-        doc.name = "Summer Ad";
+    var doc = app.documents.add({
+        documentPreferences: {
+            pageWidth: "8.5in",
+            pageHeight: "11in",
+        }
+    });
+    doc.name = "Summer Ad";
+
+* Name Document (used in scripts that create a new document) [Ps]
+
+    docVarName.name = "Summer Ad";        var width = 3; var height = 11;
+    //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
+    var doc = app.documents.add(width, height, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
+    doc.rulerUnits = Units.INCHES;
+
 
 
 
