@@ -63,7 +63,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         var doc = app.documents.add(width, height, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
         doc.rulerUnits = Units.INCHES;
 
-        //More Detailed Creation (300DPI CMYK or 72DP RGB depending on value of res variable)
+        //More Detailed Creation (300DPI CMYK (print) or 72DPI (screen) RGB depending on value of res variable)
         var width = 3;
         var height = 11;
         var hiRes = 300; //high res print
