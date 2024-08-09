@@ -29,7 +29,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 ---
 
-<h2>Document, Creation and Accessing Current</h2>
+<h2>Document, Creation and Accessing</h2>
  
 
 **Access Active Document** ***[Illustrator, InDesign, Photoshop]***</span>
@@ -40,7 +40,7 @@ This is all to remove confusion on what is a variable name versus what is an act
           
         var doc = app.documents.add();
 
-**Create Document, Set Dimensions** ***[Illustrator]***
+**Create New Document, Set Dimensions** ***[Illustrator]***
 
         //Method 1 
         /* The *72 multiplier for width and height is because Illustrator often defaults to Points for Units, General.
@@ -58,7 +58,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         //Note: origin (0,0) is bottom, left
         doc.artboards[0].artboardRect = [0, height, width, 0];
 
-**Create Document, Set Dimensions** ***[InDesign]***
+**Create New Document, Set Dimensions** ***[InDesign]***
   
         var doc = app.documents.add({
             documentPreferences: {
@@ -67,7 +67,7 @@ This is all to remove confusion on what is a variable name versus what is an act
             }
         });
 
-**Create Document, Set Dimensions** ***[Photoshop]***
+**Create New Document, Set Dimensions** ***[Photoshop]***
   
         //Basic Creation
         var width = 3;
