@@ -1,11 +1,5 @@
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
 
+$${\color{red}Red}$$
 Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Input Sources for This File</b><br>
