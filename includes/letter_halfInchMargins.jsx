@@ -13,7 +13,7 @@ function createLetterDoc(){
 
   //Set the page size
   size.pageWidth = "8.5 in";
-  size.pageHeight = "11 in";
+  size.pageHeight = "6in";
 
   //Set the margins
   margins.properties = {
@@ -24,3 +24,5 @@ function createLetterDoc(){
   }
   return doc;
 }
+
+createLetterDoc();
