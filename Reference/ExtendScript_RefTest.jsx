@@ -1,6 +1,6 @@
 /* Below are scripts that have been tested (with program(s) tested in in brackets []:
 
- [Il] = Illustrator
+* [Il] = Illustrator
 * [Id] = InDesign
 * [Ps] = Photoshop)
 
