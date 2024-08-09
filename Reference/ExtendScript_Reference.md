@@ -34,7 +34,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
         var doc = app.activeDocument;
 
-**Create New Document ***[Illustrator, InDesign, Photoshop]***
+**Create New Document** ***[Illustrator, InDesign, Photoshop]***
           
         var doc = app.documents.add();
 
@@ -56,7 +56,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         //Note: origin (0,0) is bottom, left
         doc.artboards[0].artboardRect = [0, height, width, 0];
 
-* **InDesign**
+**Create Document, Set Dimensions** ***[InDesign]***
   
         var doc = app.documents.add({
             documentPreferences: {
