@@ -28,7 +28,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 ---
 
-<h2>Document, Create</h2>
+<h2>Document</h2>
  
 **Access Active Document**
 * **Illustrator, InDesign, Photoshop**
