@@ -94,7 +94,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 <b>Document, Naming</b>
 
 * Name Document (used in scripts that create a new document)
-/t**[IL]**
+**[IL]**
         var width = 8.5*72;
         var height = 11*72;
         var doc = app.documents.add(DocumentColorSpace.RGB, width, height, 1);
