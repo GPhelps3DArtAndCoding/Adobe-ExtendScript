@@ -98,7 +98,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         **[IL]**
         var width = 8.5*72;
         var height = 11*72;
-        var doc = app.documents.add(DocumentColorSpace.RGB, width, height, 1);
+        var doc = app.documents.add(DocumentColorSpace.RGB, **width**, height, 1);
         //The file must be saved to give it a name
         doc.saveAs(File("pathToSaveLocation/fileName.ai"));
 
