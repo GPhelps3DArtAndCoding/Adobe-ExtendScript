@@ -1,10 +1,10 @@
-<b>Below are scripts that have been tested (with program(s) tested in in brackets []:
+<b>Below are scripts that have been tested (with program(s) tested in in brackets []:</b>
 
 * [Il] = Illustrator
 * [Id] = InDesign
 * [Ps] = Photoshop)
 
-They are then placed into the Reference/ExtendScript_Reference.md file. </b>
+<b>The scripts are then placed into the Reference/ExtendScript_Reference.md file.</b>
 
 * Alert [Il][In][Ps] alert("hello there" + docx);
 
