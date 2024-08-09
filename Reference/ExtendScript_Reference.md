@@ -7,17 +7,15 @@ Gary Phelps 2024 gpmail1@gmail.com
 --------------------------------------------------------------------
 
 <b>Variables</b><br>
-    * Anything after "var" is of course a variable declaration.<br>
-    * In any item where variables are created, I  will just use them in further lines like you would when writing your own code.</br>
-    * In any other scenario, I will do one of these options:<br>
-      * Use "varName" or "typeVarName" (where "type" will be an object type name (such as docTypeName)).<br>
-      * Use "my..." such as "myNewSwatch".
+  * Anything after "var" is of course a variable declaration.<br>
+  * In any section where variables are created, I  will use their names in other lines of that section.</br>
+  * Variable names will be "varName" or "typeVarName" (where "type" will be an object type name (such as docTypeName)).<br>
   
 This is all to remove confusion on what is a variable name versus what is an actual element inherent in the actual languages, such as names of objects or object methods.
 
 <b>Basic Commands</b>
 
-* Alert ***[Illustrator, InDesign, Photoshop]***
+**Alert** ***[Illustrator, InDesign, Photoshop]***
 
         alert("hello there");
 
