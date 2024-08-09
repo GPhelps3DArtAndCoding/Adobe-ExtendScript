@@ -6,7 +6,7 @@
 
 * They are then placed into the Reference/ExtendScript_Reference.md file. 
 
-* Scripts in this filethat are tested and do not need to be run again in future tests
+* Scripts below that are tested and do not need to be run again in future tests
 are moved inline with their respective comments.
 
 */
