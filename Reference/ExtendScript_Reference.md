@@ -1,5 +1,5 @@
 
-$${\color{red}MyText}$$
+${\color{red}MyText}$
 
 Gary Phelps 2024 gpmail1@gmail.com
 
