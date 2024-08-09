@@ -22,15 +22,19 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 <b>Basic Commands</b>
 
-* Alert [Il][In]
+* Alert [Il][In][Ps]
 
         alert("hello there");
 
 <b>Document</b>
  
-* Access Active Document [In]
+* Access Active Document [Il][In][Ps]
         
-        var document = app.activeDocument;
+        var doc = app.activeDocument;
+
+* Create New Document [Il][In][Ps]
+          
+        var doc = app.documents.add();
 
 * Dimensions [In]
 
@@ -44,10 +48,6 @@ This is all to remove confusion on what is a variable name versus what is an act
 * Name Document [In]
           
         docVarName.name = "Summer Ad";
-   
-* New Document [In]
-          
-        var newDocument = app.documents.add();
 
 <b>Input</b>
 
