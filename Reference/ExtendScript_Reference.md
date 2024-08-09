@@ -325,7 +325,8 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 * Text (Content) of Text Frame (put text into it) [IN]
         
         textFrameVarName.contents = "Your chosen text here";
-        /* Note: The text frame might be really small,
+        
+        [!NOTE] The text frame might be really small,
         typically places in the upper, left corner. See "Location
         and Size of Text Frame" above to create text frames of a 
-        specific size. */
+        specific size. 
