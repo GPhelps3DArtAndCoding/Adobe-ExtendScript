@@ -12,7 +12,7 @@
 
   * Access Active Document [Il][In][Ps]
   
-    var docx = app.activeDocument;
+        var docx = app.activeDocument;
 
 * Create New Document [Il][In][Ps] var doc = app.documents.add();
 
