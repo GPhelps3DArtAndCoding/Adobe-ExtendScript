@@ -29,10 +29,10 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 ---
 
-<h2>Document</h2>
+<h2>Document, Creation and Accessing Current</h2>
  
 
-**Access Active Document** ***[Illustrator, InDesign, Photoshop]${\textsf{\color{blue}My Text}}$***</span>
+**Access Active Document** ***[Illustrator, InDesign, Photoshop]***</span>
 
         var doc = app.activeDocument;
 
@@ -67,7 +67,7 @@ This is all to remove confusion on what is a variable name versus what is an act
             }
         });
 
-* Create Document, Set Dimensions [PS]
+**Create Document, Set Dimensions** ***[Photoshop]***
   
         //Basic Creation
         var width = 3;
@@ -93,7 +93,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 ---
 
-<b>Document, Naming</b>
+<h2>Document, Naming</h2>
 
 Name Document (used in scripts that create a new document)
   
