@@ -1,5 +1,5 @@
 
-${\color{red}MyText}$
+${\textsf{\color{lightgreen}Green}}$
 
 Gary Phelps 2024 gpmail1@gmail.com
 
