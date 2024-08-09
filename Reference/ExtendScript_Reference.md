@@ -95,7 +95,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 * Name Document (used in scripts that create a new document)
   
-**[IL]**
+**Illustrator**
 
         var width = 8.5*72;
         var height = 11*72;
@@ -103,7 +103,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         //The file must be saved to give it a name
         doc.saveAs(File("pathToSaveLocation/fileName.ai"));
         
-[InDesign] 
+**InDesign** 
 
         doc.name = "Summer Ad"; [IN]
         
@@ -116,16 +116,18 @@ This is all to remove confusion on what is a variable name versus what is an act
         });
         doc.name = "Summer Ad";
 
-[Photoshop]
+**Photoshop**
 
         var width = 3; var height = 11;
         //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
         var doc = app.documents.add(width, height, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
         doc.rulerUnits = Units.INCHES;
 
-<b>Input</b>
+---
 
-* File input [IN]
+<b>Input, Files</b>
+
+**InDesign**
           
         var inputFile = File("File name or path to file here");
         var inputData;
@@ -134,10 +136,16 @@ This is all to remove confusion on what is a variable name versus what is an act
         inputFile.close();
         see https://www.youtube.com/watch?v=r1WWK7pl6so @ 15:47
 
+---
+
 <b>Layers</b></br>
 INFO: Layers are a collection (like an array), where the top layer is index 0.
-    
-* Access Layer Stack [IN]
+
+
+
+* Access Layer Stack
+
+**InDesign**
           
         var layers = docVarName.layers;
 
