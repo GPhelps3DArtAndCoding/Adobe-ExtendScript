@@ -30,7 +30,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 <h2>Document</h2>
  
-**Access Active Document [Illustrator, InDesign, Photoshop]**
+**Access Active Document** ***[Illustrator, InDesign, Photoshop]***
 
         var doc = app.activeDocument;
 
