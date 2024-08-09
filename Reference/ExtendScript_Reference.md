@@ -151,7 +151,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         //all layers will have the LayerName
       }
 
-**Find a Layer** ***[Illustrator Photoshop]**
+**Find a Layer** ***[Illustrator, Photoshop]**
           
         Where "x" is the name of the layer you are looking for...
         var layer = docVarName.layers.getByName("x");
@@ -190,7 +190,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
         alert(layerVarName.name); //get name of a specific layer        
     
-**Visibility of Layer*** ***[Illustrator, InDesign]***
+**Visibility of Layer** ***[Illustrator, InDesign]***
         
         docVarName.layers[0].visible = false; //turns off top layer visibility
 
