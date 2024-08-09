@@ -1,6 +1,10 @@
-<style>
-bl {color: blue}
-</style>
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 Gary Phelps 2024 gpmail1@gmail.com
 
