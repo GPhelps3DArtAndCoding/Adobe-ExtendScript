@@ -6,12 +6,6 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 --------------------------------------------------------------------
 
-<b>Nomenclature</b><br>
-    * [MS] Microsoft<br> 
-    * [IL]: Illustrator<br>
-    * [IN]: InDesign<br>
-    * [PS]: Photoshop
-
 <b>Variables</b><br>
     * Anything after "var" is of course a variable declaration.<br>
     * In any item where variables are created, I  will just use them in further lines like you would when writing your own code.</br>
@@ -23,7 +17,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 <b>Basic Commands</b>
 
-* Alert [IL][IN][PS]
+* Alert ***[Illustrator, InDesign, Photoshop]***
 
         alert("hello there");
 
@@ -97,7 +91,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 Name Document (used in scripts that create a new document)
   
-* **Illustrator**
+**Create and Save to Name** ***[Illustrator]***
 
         var width = 8.5*72;
         var height = 11*72;
@@ -105,58 +99,44 @@ Name Document (used in scripts that create a new document)
         //The file must be saved to give it a name
         doc.saveAs(File("pathToSaveLocation/fileName.ai"));
         
-* **InDesign** 
+**Create and Name** ***[InDesign]*** 
 
-        doc.name = "Summer Ad"; [IN]
+        doc.name = "Summer Ad"; ***[InDesign]***
         
         //example
         var doc = app.documents.add({
                 documentPreferences: {
                 pageWidth: "8.5in",
-                pageHeight: "11in",
+                pageHeight: "11in",ß
             }
         });
         doc.name = "Summer Ad";
 
-* **Photoshop**
+**Create and Name** ***[Photoshop]***
 
         var width = 3; var height = 11;
-        //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
+        //Name is a parameter(input variable) of the .add method. Type is String (text). ***[Photoshop]***
         var doc = app.documents.add(width, height, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
         doc.rulerUnits = Units.INCHES;
 
 ---
 
-<b>Input, Files</b>
-
-**InDesign**
-          
-        var inputFile = File("File name or path to file here");
-        var inputData;
-        inputFile.open("r");
-        inputData = inputFile.read().toString();
-        inputFile.close();
-        see https://www.youtube.com/watch?v=r1WWK7pl6so @ 15:47
-
----
-
-<b>Layers</b></br>
+<h2>Layers/h2>
 INFO: Layers are a collection (like an array), where the top layer is index 0.
 
-
-
-* Access Layer Stack
-
-**InDesign**
+**Access Layer Stack** ***[InDesign]***
           
         var layers = docVarName.layers;
 
-* Create New Layer(s)
+**Create New Layer(s)** ***[Illustrator, InDesign]***
 
-        var newLayer = docVarName.layers.add(); //[IL][IN] create
-        var newLayer = docVarName.layers.add({name: "below top layer"}); //[IN]create and name
+        var newLayer = docVarName.layers.add(); ***[Illustrator, InDesign]***
 
-* Create New Sublayer(s) inside a Layer, at index "i" [IL]
+**Create New Layer(s) and Name Layer(s)** ***[InDesign]***
+
+        var newLayer = docVarName.layers.add({name: "below top layer"}); //create and name
+
+**Create New Sublayer(s) inside a Layer, at index "i"** ***[Illustrator]***
 
         //Creating 1 Sublayer
         var subLayer = docVarName.layers[i].layers.add(); //Change i to the index you want, where 0 will be the top layer.
@@ -169,42 +149,52 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         //all layers will have the LayerName
       }
 
-* Find a Layer
+**Find a Layer** ***[Illustrator Photoshop]**
           
-        //Where "x" is the name of the layer you are looking for...
-        var layer = docVarName.layers.getByName("x"); //[IL][PS]
-        var layer = docVarName.layers.itemByName("x"); //[IN]
-        alert(layer.name); //[IL][IN][PS] optional but provides textual ouput
+        Where "x" is the name of the layer you are looking for...
+        var layer = docVarName.layers.getByName("x");
+        alert(layer.name); //optional but provides textual ouput
 
-* Lock/Unlock Layer [IL][IN]
+
+**Find a Layer** ***[InDesign]**
+        
+        Where "x" is the name of the layer you are looking for...
+        var layer = docVarName.layers.itemByName("x");
+        alert(layer.name); //optional but provides textual ouput
+
+**Lock/Unlock Layer** ***[Illustrator, InDesign]**
           
         docVarName.layers[0].locked = true; //locks top layer
     
-* Name a Layer [IN]
+**Name a Layer** ***[Illustrator]**
 
          //name it when creating it
         var myLayer = docVarName.layers.add({name: "below top layer"});
         //or leave out the "{name:"..."} above and add...
         myLayer.name = "name";
 
-* New Layer(s) (See Create New Layer(s) above)
+**New Layer(s)*** (See Create New Layer(s) above)
 
-* Number of Layers [IN]
+**Number of Layers** ***[InDesign]***
        
         alert(layer.length);
      
-* Show/Get Name of a Layer
+**Show/Get Name of a Layer** ***[InDesign]***
         
-        alert(layer[i].name); //at index i [IN]
-        alert(layerVarName.name); //of specific layer [IL][IN][PS]
+        alert(layer[i].name); //at index i
+        //see other method below
+
+**Show/Get Name of a Layer** ***[Illustrator, InDesign, Photoshop]***
+        
+        alert(layerVarName.name); //get name of a specific layer        
     
-* Visibility of Layer [IL][IN]
+**Visibility of Layer*** ***[Illustrator, InDesign]***
         
         docVarName.layers[0].visible = false; //turns off top layer visibility
 
-<b>Layout</b>
+<h2>Layout</h2>
 
-* Margins [IN]
+***Margins*** ***[InDesign]***
            
         var myPage = doc.pages.item(0);
         var myMargin = .5;
@@ -216,42 +206,43 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
             bottom: myMargin
             };
 
-<b>Pages</b>
+<h2>Pages</h2>
     
-* Access Pages [IN]
+**Access Pages** ***[InDesign]***
        
         var myPages = *document*.pages;
 
-* Create Page(s) [IN]
+**Create Page(s)** ***[InDesign]***
         
         var myNewPage = pages.add();
 
-* Dimensions [IN]
+**Dimensions** ***[InDesign]***
        
         docVarName.documentPreferences.pageWidth = "8.5in";
         docVarName.documentPreferences.pageHeight = "11in";
 
-* Number of Pages [IN]
+**Number of Pages** ***[InDesign]***
         
         alert(myPages.length);
 
-<b>Selections</b>
+<h2>Selections</h2>
 
-* Access Selected Objects
+**Access Selected Objects**
         
         var mySelection = app.activeDocument.selection;
 
-* Name, Get Type Name of Selected Object
+**Name, Get Type Name of Selected Object**
         
         alert(varName.typename)
 
-* Select Item at index x (First Item (last object added to the page) is at index 0)
+**Select Item at index x** 
+(First Item (last object added to the page) is at index 0)
         
         var selectNewestObject = app.activeDocument.selection[x];
 
-<b>Shapes</b>
+<h2>Shapes</h2>
 
-* Rectangle[IL]
+**Rectangle** ***[Illustrator]***
 
         //Define rectangle properties
         var rectWidth = 200;    var rectX = 0;
@@ -260,14 +251,14 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         //Create a rectangle path item
         var rect = doc.pathItems.rectangle(rectY, rectX, rectWidth, rectHeight);
         
-<b>Stroke</b>
+<h2>Stroke</h2>
     
-* Stroke[IL]
+**Stroke** ***[Illustrator]***
     
         itemVarName.stroked = true; 
         //true: on/show stroke, false: off/no stroke
     
-* Stroke Color[IL]
+**Stroke Color** ***[Illustrator]***
 
         //Create RGB Color: colors range from 0 (0%) to 255 (100%)
         var myColor = new RGBColor();
@@ -286,41 +277,45 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         //applying color to an item
         itemVarName.strokeColor = myColor;
     
-* Stroke Weight/Width[IL]
+**Stroke Weight/Width** ***[Illustrator]***
 
         itemVarName.strokeWidth = 1;
 
-<b>Swatches</b>
+<h2>Swatches</h2>
 
-* Access File Swatches [IN]
+**Access File Swatches** ***[InDesign]***
         
         var mySwatches = app.swatches;
 
-* Loop through Swatches, Display Names [IN]
+**Loop through Swatches, Display Names** ***[InDesign]***
         
         var mySwatches = app.swatches;
         for(var i=0; i<mySwatches.length; i++){
             alert(mySwatches[i].name); //returns name of swatch at index i
         }
 
-<b>Text</b>
+<h2>Text</h2>
 
-* Create a Text Frame [IN]
+**Create a Text Frame** ***[InDesign]***
         
-        var newTextLayer = docVarName.textFrames.add(); //[IL]
-        var newTextFrame = pageVarName.textFrames.add(); //[IN]
+        var newTextFrame = pageVarName.textFrames.add();
 
-* Location and Size of Text Frame [IN]
+**Create a Text Frame** ***[Illustrator]***
+        
+        var newTextLayer = docVarName.textFrames.add();
+
+**Location and Size of Text Frame** ***[InDesign]***
         
         textFrameVarName.geometricBounds = [y1,x1,y2,x2]
         /* y1,x1 = y,x coordinates of the top left corner
            y2,x2 = y,x coordinates of the bottom right corner */
 
-* QR Code [IN]
+**QR Code** ***[InDesign]***
        
         textFrameVarName.createPlainQRCode("url for QR Code here");
 
-* Text (Content) of Text Frame (put text into it) [IN]
+**Text (Content) of Text Frame (put text into it** ***[InDesign]***
+
         
         textFrameVarName.contents = "Your chosen text here";
 
