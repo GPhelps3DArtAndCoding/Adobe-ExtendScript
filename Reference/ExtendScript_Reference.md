@@ -1,5 +1,6 @@
 
-$${\color{red}Red}$$
+$${\color{red}MyText}$$
+
 Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Input Sources for This File</b><br>
