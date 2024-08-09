@@ -30,8 +30,10 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 <b>Document, Create</b>
  
-* Access Active Document [IL][IN][PS]
-        
+Access Active Document
+
+* **Illustrator, InDesign, Photoshop**
+
         var doc = app.activeDocument;
 
 * Create New Document [IL][IN][PS]
@@ -93,7 +95,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 <b>Document, Naming</b>
 
-* Name Document (used in scripts that create a new document)
+Name Document (used in scripts that create a new document)
   
 * **Illustrator**
 
@@ -103,7 +105,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         //The file must be saved to give it a name
         doc.saveAs(File("pathToSaveLocation/fileName.ai"));
         
-**InDesign** 
+* **InDesign** 
 
         doc.name = "Summer Ad"; [IN]
         
@@ -116,7 +118,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         });
         doc.name = "Summer Ad";
 
-**Photoshop**
+* **Photoshop**
 
         var width = 3; var height = 11;
         //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
