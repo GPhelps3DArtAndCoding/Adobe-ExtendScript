@@ -34,11 +34,11 @@ This is all to remove confusion on what is a variable name versus what is an act
 
         var doc = app.activeDocument;
 
-**Create New Document (Illustrator, InDesign, Photoshop)**
+**Create New Document ***[Illustrator, InDesign, Photoshop]***
           
         var doc = app.documents.add();
 
-**Create Document, Set Dimensions (Illustrator)**
+**Create Document, Set Dimensions** ***[Illustrator]***
 
         //Method 1 
         /* The *72 multiplier for width and height is because Illustrator often defaults to Points for Units, General.
