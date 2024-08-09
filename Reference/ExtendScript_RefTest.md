@@ -62,25 +62,25 @@
 
 * Name Document (used in scripts that create a new document) [In]
           
-    docVarName.name = "Summer Ad"; 
-        
-    //example
-    doc.name = "Summer Ad";
+        docVarName.name = "Summer Ad"; 
+            
+        //example
+        doc.name = "Summer Ad";
 
-    var doc = app.documents.add({
-        documentPreferences: {
-            pageWidth: "8.5in",
-            pageHeight: "11in",
-        }
-    });
-    doc.name = "Summer Ad";
+        var doc = app.documents.add({
+            documentPreferences: {
+                pageWidth: "8.5in",
+                pageHeight: "11in",
+            }
+        });
+        doc.name = "Summer Ad";
 
 * Name Document (used in scripts that create a new document) [Ps]
 
-    docVarName.name = "Summer Ad";        var width = 3; var height = 11;
-    //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
-    var doc = app.documents.add(width, height, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
-    doc.rulerUnits = Units.INCHES;
+        docVarName.name = "Summer Ad";        var width = 3; var height = 11;
+        //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
+        var doc = app.documents.add(width, height, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
+        doc.rulerUnits = Units.INCHES;
 
 
 
