@@ -4,8 +4,7 @@ Gary Phelps 2024 gpmail1@gmail.com
 <b>Input Sources for This File</b><br>
     * <a href="https://www.youtube.com/watch?v=r1WWK7pl6so">Adobe InDesign Scripting Tutorial: Create a Basic Script</a> - Youtube, NT Productions 
 
---------------------------------------------------------------------
-
+---
 <b>Variables</b><br>
   * Anything after "var" is of course a variable declaration.<br>
   * In any section where variables are created, I  will use their names in other lines of that section.</br>
@@ -13,7 +12,9 @@ Gary Phelps 2024 gpmail1@gmail.com
   
 This is all to remove confusion on what is a variable name versus what is an actual element inherent in the actual languages, such as names of objects or object methods.
 
-<b>Basic Commands</b>
+---
+
+<h2>Basic Commands</h2>
 
 **Alert** ***[Illustrator, InDesign, Photoshop]***
 
