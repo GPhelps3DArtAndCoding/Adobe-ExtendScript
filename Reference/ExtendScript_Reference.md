@@ -123,7 +123,8 @@ Name Document (used in scripts that create a new document)
 ---
 
 <h2>Layers</h2>
-INFO: Layers are a collection (like an array), where the top layer is index 0.</br>
+
+INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 **Access Layer Stack** ***[InDesign]***
           
