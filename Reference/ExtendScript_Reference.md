@@ -26,7 +26,9 @@ This is all to remove confusion on what is a variable name versus what is an act
 
         alert("hello there");
 
-<b>Document</b>
+---
+
+<b>Document, Create</b>
  
 * Access Active Document [IL][IN][PS]
         
@@ -87,6 +89,10 @@ This is all to remove confusion on what is a variable name versus what is an act
                 alert("Res is " + res + "dpi for screen.");
                 var doc = app.documents.add(width, height, res, "File Name", NewDocumentMode.RGB, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
 
+---
+
+<b>Document, Naming</b>
+
 * Name Document (used in scripts that create a new document)
   
         [IL]
@@ -95,8 +101,6 @@ This is all to remove confusion on what is a variable name versus what is an act
         var doc = app.documents.add(DocumentColorSpace.RGB, width, height, 1);
         //The file must be saved to give it a name
         doc.saveAs(File("pathToSaveLocation/fileName.ai"));
-
----
 
         [IN]  
         doc.name = "Summer Ad"; [IN]
