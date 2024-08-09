@@ -56,6 +56,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         });
 
 * Create Document, Set Dimensions [Ps]
+  
         //Basic Creation
         var width = 3;
         var height = 11;
