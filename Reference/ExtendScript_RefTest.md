@@ -6,6 +6,8 @@
 
 <b>The scripts are then placed into the Reference/ExtendScript_Reference.md file.</b>
 
+* Alerts
+  
         Alert [Il][In][Ps] alert("hello there" + docx);
 
 <b>Document(s)</b>
