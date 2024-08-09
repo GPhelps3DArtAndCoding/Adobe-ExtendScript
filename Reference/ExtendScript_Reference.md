@@ -1,6 +1,4 @@
 
-${\textsf{\color{blue}My Text}}$
-
 Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Input Sources for This File</b><br>
@@ -33,8 +31,8 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 <h2>Document</h2>
  
-<span style="color:blue">some *blue* text</span>
-**Access Active Document** ***<bl>[Illustrator, InDesign, Photoshop]</bl>***</span>
+
+**Access Active Document** ***<b[Illustrator, InDesign, Photoshop]${\textsf{\color{blue}My Text}}$>***</span>
 
         var doc = app.activeDocument;
 
