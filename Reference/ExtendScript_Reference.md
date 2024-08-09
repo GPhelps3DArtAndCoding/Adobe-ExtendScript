@@ -7,9 +7,9 @@ Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Nomenclature</b><br>
     * [MS] Microsoft<br> 
-    * [Il]: Illustrator<br>
-    * [In]: InDesign<br>
-    * [Ps]: Photoshop
+    * [IL]: Illustrator<br>
+    * [IN]: InDesign<br>
+    * [PS]: Photoshop
 
 <b>Variables</b><br>
     * Anything after "var" is of course a variable declaration.<br>
@@ -22,24 +22,24 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 <b>Basic Commands</b>
 
-* Alert [Il][In][Ps]
+* Alert [IL][IN][PS]
 
         alert("hello there");
 
 <b>Document</b>
  
-* Access Active Document [Il][In][Ps]
+* Access Active Document [IL][IN][PS]
         
         var doc = app.activeDocument;
 
-* Create New Document [Il][In][Ps]
+* Create New Document [IL][IN][PS]
           
         var doc = app.documents.add();
 
-* Create Document, Set Dimensions [Il]
+* Create Document, Set Dimensions [IL]
 
         //Method 1 
-        /* The *72 multiplier for hight and width is because Illustrator often defaults to Points for Units, General.
+        /* The *72 multiplier for width and height is because Illustrator often defaults to Points for Units, General.
         If Illustrator defaults to inches (I've yet to find out how to do this), then remove the *72 from each var below. */)
         var width = 8.5*72;
         var height = 11*72;
@@ -54,7 +54,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         //Note: origin (0,0) is bottom, left
         doc.artboards[0].artboardRect = [0, height, width, 0];
 
-* Create Document, Set Dimensions [In]
+* Create Document, Set Dimensions [IN]
   
         var doc = app.documents.add({
             documentPreferences: {
@@ -63,7 +63,7 @@ This is all to remove confusion on what is a variable name versus what is an act
             }
         });
 
-* Create Document, Set Dimensions [Ps]
+* Create Document, Set Dimensions [PS]
   
         //Basic Creation
         var width = 3;
@@ -88,9 +88,9 @@ This is all to remove confusion on what is a variable name versus what is an act
                 var doc = app.documents.add(width, height, res, "File Name", NewDocumentMode.RGB, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
        
       
-* Name Document (used in scripts that create a new document) [In]
+* Name Document (used in scripts that create a new document) [IN]
           
-        doc.name = "Summer Ad"; [In]
+        doc.name = "Summer Ad"; [IN]
         
         //example
         var doc = app.documents.add({
@@ -101,7 +101,10 @@ This is all to remove confusion on what is a variable name versus what is an act
         });
         doc.name = "Summer Ad";
 
-* Name Document (used in scripts that create a new document) [Ps]
+* Name Document (used in scripts that create a new document) [IL]
+
+
+* Name Document (used in scripts that create a new document) [PS]
 
         var width = 3; var height = 11;
         //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
@@ -110,7 +113,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 <b>Input</b>
 
-* File input [In]
+* File input [IN]
           
         var inputFile = File("File name or path to file here");
         var inputData;
@@ -122,16 +125,16 @@ This is all to remove confusion on what is a variable name versus what is an act
 <b>Layers</b></br>
 INFO: Layers are a collection (like an array), where the top layer is index 0.
     
-* Access Layer Stack [In]
+* Access Layer Stack [IN]
           
         var layers = docVarName.layers;
 
 * Create New Layer(s)
 
-        var newLayer = docVarName.layers.add(); //[Il][In] create
-        var newLayer = docVarName.layers.add({name: "below top layer"}); //[In]create and name
+        var newLayer = docVarName.layers.add(); //[IL][IN] create
+        var newLayer = docVarName.layers.add({name: "below top layer"}); //[IN]create and name
 
-* Create New Sublayer(s) inside a Layer, at index "i" [Il]
+* Create New Sublayer(s) inside a Layer, at index "i" [IL]
 
         //Creating 1 Sublayer
         var subLayer = docVarName.layers[i].layers.add(); //Change i to the index you want, where 0 will be the top layer.
@@ -147,15 +150,15 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 * Find a Layer
           
         //Where "x" is the name of the layer you are looking for...
-        var layer = docVarName.layers.getByName("x"); //[Il][Ps]
-        var layer = docVarName.layers.itemByName("x"); //[In]
-        alert(layer.name); //[Il][In][Ps] optional but provides textual ouput
+        var layer = docVarName.layers.getByName("x"); //[IL][PS]
+        var layer = docVarName.layers.itemByName("x"); //[IN]
+        alert(layer.name); //[IL][IN][PS] optional but provides textual ouput
 
-* Lock/Unlock Layer [Il][In]
+* Lock/Unlock Layer [IL][IN]
           
         docVarName.layers[0].locked = true; //locks top layer
     
-* Name a Layer [In]
+* Name a Layer [IN]
 
          //name it when creating it
         var myLayer = docVarName.layers.add({name: "below top layer"});
@@ -164,22 +167,22 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 * New Layer(s) (See Create New Layer(s) above)
 
-* Number of Layers [In]
+* Number of Layers [IN]
        
         alert(layer.length);
      
 * Show/Get Name of a Layer
         
-        alert(layer[i].name); //at index i [In]
-        alert(layerVarName.name); //of specific layer [Il][In][Ps]
+        alert(layer[i].name); //at index i [IN]
+        alert(layerVarName.name); //of specific layer [IL][IN][PS]
     
-* Visibility of Layer [Il][In]
+* Visibility of Layer [IL][IN]
         
         docVarName.layers[0].visible = false; //turns off top layer visibility
 
 <b>Layout</b>
 
-* Margins [In]
+* Margins [IN]
            
         var myPage = doc.pages.item(0);
         var myMargin = .5;
@@ -193,20 +196,20 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 <b>Pages</b>
     
-* Access Pages [In]
+* Access Pages [IN]
        
         var myPages = *document*.pages;
 
-* Create Page(s) [In]
+* Create Page(s) [IN]
         
         var myNewPage = pages.add();
 
-* Dimensions [In]
+* Dimensions [IN]
        
         docVarName.documentPreferences.pageWidth = "8.5in";
         docVarName.documentPreferences.pageHeight = "11in";
 
-* Number of Pages [In]
+* Number of Pages [IN]
         
         alert(myPages.length);
 
@@ -226,7 +229,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 <b>Shapes</b>
 
-* Rectangle[Il]
+* Rectangle[IL]
 
         //Define rectangle properties
         var rectWidth = 200;    var rectX = 0;
@@ -237,12 +240,12 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
 <b>Stroke</b>
     
-* Stroke[Il]
+* Stroke[IL]
     
         itemVarName.stroked = true; 
         //true: on/show stroke, false: off/no stroke
     
-* Stroke Color[Il]
+* Stroke Color[IL]
 
         //Create RGB Color: colors range from 0 (0%) to 255 (100%)
         var myColor = new RGBColor();
@@ -261,17 +264,17 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         //applying color to an item
         itemVarName.strokeColor = myColor;
     
-* Stroke Weight/Width[Il]
+* Stroke Weight/Width[IL]
 
         itemVarName.strokeWidth = 1;
 
 <b>Swatches</b>
 
-* Access File Swatches [In]
+* Access File Swatches [IN]
         
         var mySwatches = app.swatches;
 
-* Loop through Swatches, Display Names [In]
+* Loop through Swatches, Display Names [IN]
         
         var mySwatches = app.swatches;
         for(var i=0; i<mySwatches.length; i++){
@@ -280,22 +283,22 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 <b>Text</b>
 
-* Create a Text Frame [In]
+* Create a Text Frame [IN]
         
-        var newTextLayer = docVarName.textFrames.add(); //[Il]
-        var newTextFrame = pageVarName.textFrames.add(); //[In]
+        var newTextLayer = docVarName.textFrames.add(); //[IL]
+        var newTextFrame = pageVarName.textFrames.add(); //[IN]
 
-* Location and Size of Text Frame [In]
+* Location and Size of Text Frame [IN]
         
         textFrameVarName.geometricBounds = [y1,x1,y2,x2]
         /* y1,x1 = y,x coordinates of the top left corner
            y2,x2 = y,x coordinates of the bottom right corner */
 
-* QR Code [In]
+* QR Code [IN]
        
         textFrameVarName.createPlainQRCode("url for QR Code here");
 
-* Text (Content) of Text Frame (put text into it) [In]
+* Text (Content) of Text Frame (put text into it) [IN]
         
         textFrameVarName.contents = "Your chosen text here";
         /* Note: The text frame might be really small,

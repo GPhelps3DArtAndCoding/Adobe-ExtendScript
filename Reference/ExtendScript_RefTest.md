@@ -1,26 +1,26 @@
 <b>Below are scripts that have been tested (with program(s) tested in in brackets []:</b>
 
-* [Il] = Illustrator
+* [IL] = Illustrator
 * [Id] = InDesign
-* [Ps] = Photoshop)
+* [PS] = Photoshop)
 
 <b>The scripts are then placed into the Reference/ExtendScript_Reference.md file.</b>
 
 * Alerts
   
-        Alert [Il][In][Ps] alert("hello there" + docx);
+        Alert [IL][IN][PS] alert("hello there" + docx);
 
 <b>Document(s)</b>
 
-  * Access Active Document [Il][In][Ps]
+  * Access Active Document [IL][IN][PS]
   
         var docx = app.activeDocument;
 
-* Create New Document [Il][In][Ps]
+* Create New Document [IL][IN][PS]
   
         var doc = app.documents.add();
 
-* Create New Document of Specified Size [Il]
+* Create New Document of Specified Size [IL]
   
         //Method 1 
         /* The *72 multiplier for hight and width is because Illustrator often defaults to Points for Units, General.
@@ -39,7 +39,7 @@
         doc.artboards[0].artboardRect = [0, height, width, 0];
         */
 
-* Create New Document of Specified Size [In]
+* Create New Document of Specified Size [IN]
   
         var doc = app.documents.add({
             documentPreferences: {
@@ -71,7 +71,15 @@
             doc.rulerUnits = Units.INCHES;
         }
 
-* Name Document (used in scripts that create a new document) [In]
+* Name Document (used in scripts that create a new document) [IL]
+
+        var width = 8.5*72;
+        var height = 11*72;
+        var doc = app.documents.add(DocumentColorSpace.RGB, width, height, 1);
+        //The file must be saved to give it a name
+        doc.saveAs(File("pathToSaveLocation/fileName.ai"));
+
+* Name Document (used in scripts that create a new document) [IN]
           
         docVarName.name = "Summer Ad"; 
             
@@ -86,7 +94,7 @@
         });
         doc.name = "Summer Ad";
 
-* Name Document (used in scripts that create a new document) [Ps]
+* Name Document (used in scripts that create a new document) [PS]
 
         docVarName.name = "Summer Ad";        var width = 3; var height = 11;
         //Name is a parameter(input variable) of the .add method. Type is String (text). [PS]
