@@ -36,9 +36,10 @@ This is all to remove confusion on what is a variable name versus what is an act
 
         var doc = app.activeDocument;
 
+**Create New Document**
 * **Illustrator, InDesign, Photoshop**
 
-* ** [IL][IN][PS]
+ [IL][IN][PS]
           
         var doc = app.documents.add();
 
