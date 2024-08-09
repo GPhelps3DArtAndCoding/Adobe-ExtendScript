@@ -1,3 +1,7 @@
+<style>
+bl {color: blue}
+</style>
+
 Gary Phelps 2024 gpmail1@gmail.com
 
 <b>Input Sources for This File</b><br>
@@ -30,7 +34,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 <h2>Document</h2>
  
-**Access Active Document** <span style="color:blue">***[Illustrator, InDesign, Photoshop]***</span>
+**Access Active Document** ***<bl>[Illustrator, InDesign, Photoshop]</bl>***</span>
 
         var doc = app.activeDocument;
 
