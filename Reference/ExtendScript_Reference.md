@@ -9,7 +9,7 @@ Gary Phelps 2024 gpmail1@gmail.com
 <b>Variables</b><br>
   * Anything after "var" is of course a variable declaration.<br>
   * In any section where variables are created, I  will use their names in other lines of that section.</br>
-  * Variable names will be "varName" or "typeVarName" (where "type" will be an object type name (such as docTypeName)).<br>
+  * Variable names will be "varName" or "typeVarName" (where "type" will be an object type name (such as docVarName)).<br>
   
 This is all to remove confusion on what is a variable name versus what is an actual element inherent in the actual languages, such as names of objects or object methods.
 
