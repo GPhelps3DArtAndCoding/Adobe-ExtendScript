@@ -39,9 +39,10 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 **Create New Document, Set Dimensions** ***[Illustrator]***
 
-        //Method 1 
         /* The *72 multiplier for width and height is because Illustrator often defaults to Points for Units, General.
-        If Illustrator defaults to inches (I've yet to find out how to do this), then remove the *72 from each var below. */)
+        If Illustrator defaults to inches (I've yet to find out how to do this), then remove the *72 from the var declarations */)
+
+        //Method 1 
         var width = 8.5*72;
         var height = 11*72;
         var doc = app.documents.add(DocumentColorSpace.RGB, width, height, 1);
