@@ -154,20 +154,20 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         //all layers will have the LayerName
       }
 
-**Find a Layer** ***[Illustrator, Photoshop]**
+**Find a Layer** ***[Illustrator, Photoshop]***
           
         Where "x" is the name of the layer you are looking for...
         var layer = docVarName.layers.getByName("x");
         alert(layer.name); //optional but provides textual ouput
 
 
-**Find a Layer** ***[InDesign]**
+**Find a Layer** ***[InDesign]***
         
         Where "x" is the name of the layer you are looking for...
         var layer = docVarName.layers.itemByName("x");
         alert(layer.name); //optional but provides textual ouput
 
-**Lock/Unlock Layer** ***[Illustrator, InDesign]**
+**Lock/Unlock Layer** ***[Illustrator, InDesign]***
           
         docVarName.layers[0].locked = true; //locks top layer
     
