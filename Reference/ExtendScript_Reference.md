@@ -10,7 +10,9 @@ Gary Phelps 2024 gpmail1@gmail.com
 <b>Variables</b><br>
   * Anything after "var" is of course a variable declaration.<br>
   * In any section where variables are created, I will use their names in other lines of that section.</br>
-  * Variable names will be generic: "varName" or "typeVarName" (where "type" will be an object type name (such as docVarName)). This way it will be easy to know what data type a variable is referencing.
+  * Variable names will be generic:</br>
+        &#8226; The generic "varName" is when possible.</br>
+        &#8226; When specificity is important, I use "typeVarName", where "type" will be the variable's object type (such as docVarName for a document variable).
   
 This is all to remove confusion on what is a variable name versus what is an actual element inherent in the actual languages, such as the name of an object or an object method which of course can't be changed.
 
