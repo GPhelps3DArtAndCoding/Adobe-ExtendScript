@@ -36,7 +36,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         var doc = app.documents.add();
 
 **Create New Document, Set Dimensions** *[Illustrator]*
-The *72 multiplier for width and height, used in come of the code samples below, is used because Illustrator often defaults to Points for Units, General. If Illustrator defaults to inches (I've yet to find out how to do this), then remove the *72 multiplier.
+> [!IMPORTANT] The *72 multiplier for width and height, used in come of the code samples below, is used because Illustrator often defaults to Points for Units, General. If Illustrator defaults to inches (I've yet to find out how to do this), then remove the *72 multiplier.
 
         //Method 1 
         var width = 8.5*72;
@@ -328,7 +328,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 > [!TIP]
 > Optional information to help a user be more successful.
 
-[!IMPORTANT]  
+> [!IMPORTANT]  
 > Crucial information necessary for users to succeed.
 
 > [!WARNING]  
