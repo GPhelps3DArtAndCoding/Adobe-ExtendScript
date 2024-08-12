@@ -37,7 +37,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 **Create New Document, Set Dimensions** *[Illustrator]*
 > [!IMPORTANT]
-The *72 multiplier for width and height, used in come of the code samples below, is used because Illustrator often defaults to Points for Units, General. If Illustrator defaults to inches (I've yet to find out how to do this), then remove the *72 multiplier.
+The *72 multiplier for width and height, used in come of the code samples below, is used because Illustrator often defaults to Points (1 point =1/72 of an inch) for Units, General. If Illustrator defaults to inches (I've yet to find out how to do this), then remove the *72 multiplier.
 
         //Method 1 
         var width = 8.5*72;
