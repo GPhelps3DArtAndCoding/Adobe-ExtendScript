@@ -10,6 +10,7 @@
 </p>
 <p>
 <b>Markdown Formatting</b>
+
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
 
