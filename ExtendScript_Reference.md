@@ -366,11 +366,6 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
         textFrameVarName.contents = "Your chosen text here";
 
-        The text frame might be really small,
-        typically places in the upper, left corner. See "Location
-        and Size of Text Frame" above to create text frames of a 
-        specific size.
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
+> [!NOTE]
+> The text frame might be really small, typically places in the upper, left corner. See "Location and Size of Text Frame" above to create text frames of a specific size.
 
