@@ -317,7 +317,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 ---
 
-#### Swatches
+### Swatches
 
 **Access File Swatches** *[InDesign]*
         
@@ -332,7 +332,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 ---
 
-#### Text
+### Text
 
 **Create a Text Frame** *[InDesign]*
         
