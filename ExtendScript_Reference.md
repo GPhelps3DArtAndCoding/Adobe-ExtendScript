@@ -22,16 +22,22 @@ This is all to remove confusion on what is a variable name versus what is an act
 **Background, Set Color** *[Illustrator]*
 
         function background(){
-        var background = docVarName.pathItems.add();
-        background.filled = true;
-        var bgFillColor = new CMYKColor();
-        bgFillColor.cyan = 60;
-        bgFillColor.magenta = 0;
-        bgFillColor.yellow = 20;
-        bgFillColor.black = 0;
-        background.fillColor = bgFillColor;
-        background.setEntirePath([[0,0],[docVarName.width,0],[docVarName.width,doc.height],[0,docVarName.height]]);
-        background.stroked = false;
+                var background = docVarName.pathItems.add(); //Create path for background rectangle.
+                background.filled = true; //Set it to filled with color;
+                
+                //create new background color
+                var bgFillColor = new CMYKColor();
+                bgFillColor.cyan = 60;          bgFillColor.magenta = 0;
+                bgFillColor.yellow = 20;        bgFillColor.black = 0;
+                //Set background rectangle fill to the new background color.
+                background.fillColor = bgFillColor;
+                
+                //create rectangle
+                var bgWidth = docVarName.width; //Set background width to document width.
+                var bgHeight = docVarName.height; //Set background height to document height.
+                background.setEntirePath([[0,0],[bgWidth,0],[bgWidth,bgHeight],[0,bgHeight]]);
+                
+                background.stroked = false; //set stroke to 0
         }
 
 ---
