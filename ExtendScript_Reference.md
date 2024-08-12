@@ -352,6 +352,19 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
         var newTextLayer = docVarName.textFrames.add();
 
+**Create a Text Frame and assign Text To It** *[InDesign]*
+
+        function createText(text){
+        var textFrame = docVarName.textFrames.add();
+        textFrame.name = "Test Text Frame.";
+                
+        textFrame.contents = text;
+        var textRange = textFrame.textRange;
+        textRange.size = 36;
+        textRange.justification = Justification.LEFT;
+        textFrame.position = [docVarName.width*.5-textFrame.width*.5, docVarName.height*.5+textFrame.height*.5];
+        }
+
 **Location and Size of Text Frame** *[InDesign]*
         
         textFrameVarName.geometricBounds = [y1,x1,y2,x2]
@@ -362,7 +375,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
        
         textFrameVarName.createPlainQRCode("url for QR Code here");
 
-**Text (Content) of Text Frame (put text into it** *[InDesign]*
+**Assign Text to Existing Text Frame** *[InDesign]*
         
         textFrameVarName.contents = "Your chosen text here";
 
