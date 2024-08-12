@@ -24,16 +24,16 @@ This is all to remove confusion on what is a variable name versus what is an act
         function background(){
                 var background = docVarName.pathItems.add(); //Create path for background rectangle.
                 background.filled = true; //Set it to filled with color;
-                background.stroked = false; //set stroke to 0
+                background.stroked = false; //Set the stroke to 0.
 
-                //create new background color
+                //Create a new background color.
                 var bgFillColor = new CMYKColor();
                 bgFillColor.cyan = 60;          bgFillColor.magenta = 0;
                 bgFillColor.yellow = 20;        bgFillColor.black = 0;
                 //Set background rectangle fill to the new background color.
                 background.fillColor = bgFillColor;
                 
-                //create rectangle
+                //Create a rectangle to serve as the background.
                 var bgWidth = docVarName.width; //Set background width to document width.
                 var bgHeight = docVarName.height; //Set background height to document height.
                 background.setEntirePath([[0,0],[bgWidth,0],[bgWidth,bgHeight],[0,bgHeight]]);      
