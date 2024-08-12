@@ -6,8 +6,8 @@
 * <a href="https://extendscript.docsforadobe.dev/introduction/extendscript-overview.html">ExtendScript Overview</a>
 <p>
 <b>Git Formatting</b>
-<a href="https://github.com/orgs/community/discussions/16925">[Markdown] An option to highlight a "Note" and "Warning" using blockquote</a>
+* <a href="https://github.com/orgs/community/discussions/16925">[Markdown] An option to highlight a "Note" and "Warning" using blockquote</a>
 </p>
 <p>
 <b>Markdown Formatting</b>
-<a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">GitHub Docs: Basic Writing and Formatting Syntax</a>
+* <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">GitHub Docs: Basic Writing and Formatting Syntax</a>
