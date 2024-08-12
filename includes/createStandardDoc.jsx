@@ -1,28 +1,28 @@
-//Create a letter sized document with 1/2 inch margins
-function createLetterDoc(){
+//Global Varibles
+  var doc = app.documents.add(); //Create a new document
+  //Size Variables
+    var halfInch = ".5 in";
+    var size = doc.documentPreferences;
+  //Margins
+    var margins= doc.pages[0].marginPreferences;
+//-----------------------------------------------------------
 
-  //Create a new document
-  var doc = app.documents.add();
-
-  //Variables
-  var size = doc.documentPreferences;
-  var margins= doc.pages[0].marginPreferences;
-  var halfInch = ".5 in";
-  
-  //--------------------------------------------------
-
-  //Set the page size
-  size.pageWidth = "8.5 in";
-  size.pageHeight = "6in";
-
-  //Set the margins
-  margins.properties = {
-    top: halfInch,
-    bottom: halfInch,
-    left: halfInch,
-    right: halfInch
+  function createLetter(){
+    //Set the page size
+      size.pageWidth = "8.5 in"; size.pageHeight = "11in";
+    //Set the margins
+    margins.properties = {
+        top: halfInch,bottom: halfInch,left: halfInch,right: halfInch
+      }
+    return doc;
   }
-  return doc;
-}
 
-createLetterDoc();
+  function create8by10(){
+    //Set the page size
+      size.pageWidth = "8 in"; size.pageHeight = "10in";
+    //Set the margins
+    margins.properties = {
+        top: halfInch,bottom: halfInch,left: halfInch,right: halfInch
+      }
+    return doc;
+  }

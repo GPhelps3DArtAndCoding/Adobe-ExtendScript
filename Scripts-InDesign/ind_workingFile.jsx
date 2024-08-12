@@ -2,6 +2,6 @@
 and work on creating a UI Script Launcher or sorts. */
 
 //Create a new document
-#include "../includes/letter_halfInchMargins.jsx";
+#include "../includes/createStandardDoc.jsx";
 
-var doc = createLetterDoc();
+var doc1 = createLetter();
