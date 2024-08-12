@@ -7,7 +7,7 @@ Gary Phelps 2024 gpmail1@gmail.com
     * <a href="https://www.youtube.com/watch?v=r1WWK7pl6so">Adobe InDesign Scripting Tutorial: Create a Basic Script</a> - Youtube, NT Productions 
 
 ---
-<b>Variables</b><br>
+#### Variables Within This Guide<br>
   * Anything after "var" is of course a variable declaration.<br>
   * In any section where variables are created, I will use their names in other lines of that section.</br>
   * Variable names will be generic: "varName" or "typeVarName" (where "type" will be an object type name (such as docVarName)). This way it will be easy to know what data type a variable is referencing.
@@ -16,30 +16,31 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 ---
 
-<h2>Basic Commands</h2>
+#### Basic Commands
 
-**Alert** ***[Illustrator, InDesign, Photoshop]***
+**Alert** *[Illustrator, InDesign, Photoshop]*
 
         alert("hello there");
 
 ---
 
-<h2>Document, Creation and Accessing</h2>
+#### Document, Creation and Accessing
  
 
-**Access Active Document** ***[Illustrator, InDesign, Photoshop]***</span>
+**Access Active Document** *[Illustrator, InDesign, Photoshop]*</span>
 
         var doc = app.activeDocument;
 
-**Create New Document** ***[Illustrator, InDesign, Photoshop]***
+**Create New Document** *[Illustrator, InDesign, Photoshop]*
           
         var doc = app.documents.add();
 
-**Create New Document, Set Dimensions** ***[Illustrator]***
+**Create New Document, Set Dimensions** **[Illustrator]**
+
+        /* The *72 multiplier, used below, for width and height is because Illustrator often defaults to Points for Units, General.
+        If Illustrator defaults to inches (I've yet to find out how to do this), then remove the *72 from each var below. */)
 
         //Method 1 
-        /* The *72 multiplier for width and height is because Illustrator often defaults to Points for Units, General.
-        If Illustrator defaults to inches (I've yet to find out how to do this), then remove the *72 from each var below. */)
         var width = 8.5*72;
         var height = 11*72;
         var doc = app.documents.add(DocumentColorSpace.RGB, width, height, 1);
@@ -53,7 +54,7 @@ This is all to remove confusion on what is a variable name versus what is an act
         //Note: origin (0,0) is bottom, left
         doc.artboards[0].artboardRect = [0, height, width, 0];
 
-**Create New Document, Set Dimensions** ***[InDesign]***
+**Create New Document, Set Dimensions** **[InDesign]**
   
         var doc = app.documents.add({
             documentPreferences: {
@@ -62,7 +63,7 @@ This is all to remove confusion on what is a variable name versus what is an act
             }
         });
 
-**Create New Document, Set Dimensions** ***[Photoshop]***
+**Create New Document, Set Dimensions** **[Photoshop]**
   
         //Basic Creation
         var width = 3;
@@ -88,11 +89,9 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 ---
 
-<h2>Document, Naming</h2>
-
-Name Document (used in scripts that create a new document)
+#### Document, Naming
   
-**Create and Save to Name** ***[Illustrator]***
+**Create, Save, and Name** *[Illustrator]*
 
         var width = 8.5*72;
         var height = 11*72;
@@ -100,9 +99,9 @@ Name Document (used in scripts that create a new document)
         //The file must be saved to give it a name
         doc.saveAs(File("pathToSaveLocation/fileName.ai"));
         
-**Create and Name** ***[InDesign]*** 
+**Create and Name** **[InDesign]** 
 
-        doc.name = "Summer Ad"; ***[InDesign]***
+        doc.name = "Summer Ad"; **[InDesign]**
         
         //example
         var doc = app.documents.add({
@@ -113,10 +112,10 @@ Name Document (used in scripts that create a new document)
         });
         doc.name = "Summer Ad";
 
-**Create and Name** ***[Photoshop]***
+**Create and Name** **[Photoshop]**
 
-        var width = 3; var height = 11;
-        //Name is a parameter(input variable) of the .add method. Type is String (text). ***[Photoshop]***
+        var width = 12; var height = 8;
+        //Name is a parameter(input variable) of the .add method. Type is String (text). **[Photoshop]**
         var doc = app.documents.add(width, height, 300, "File Name", NewDocumentMode.CMYK, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT);
         doc.rulerUnits = Units.INCHES;
 
@@ -126,19 +125,19 @@ Name Document (used in scripts that create a new document)
 
 INFO: Layers are a collection (like an array), where the top layer is index 0.
 
-**Access Layer Stack** ***[InDesign]***
+**Access Layer Stack** **[InDesign]**
           
         var layers = docVarName.layers;
 
-**Create New Layer(s)** ***[Illustrator, InDesign]***
+**Create New Layer(s)** **[Illustrator, InDesign]**
 
-        var newLayer = docVarName.layers.add(); ***[Illustrator, InDesign]***
+        var newLayer = docVarName.layers.add(); **[Illustrator, InDesign]**
 
-**Create New Layer(s) and Name Layer(s)** ***[InDesign]***
+**Create New Layer(s) and Name Layer(s)** **[InDesign]**
 
         var newLayer = docVarName.layers.add({name: "below top layer"}); //create and name
 
-**Create New Sublayer(s) inside a Layer, at index "i"** ***[Illustrator]***
+**Create New Sublayer(s) inside a Layer, at index "i"** **[Illustrator]**
 
         //Creating 1 Sublayer
         var subLayer = docVarName.layers[i].layers.add(); //Change i to the index you want, where 0 will be the top layer.
@@ -151,24 +150,24 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         //all layers will have the LayerName
       }
 
-**Find a Layer** ***[Illustrator, Photoshop]**
+**Find a Layer** **[Illustrator, Photoshop]*
           
         Where "x" is the name of the layer you are looking for...
         var layer = docVarName.layers.getByName("x");
         alert(layer.name); //optional but provides textual ouput
 
 
-**Find a Layer** ***[InDesign]**
+**Find a Layer** **[InDesign]*
         
         Where "x" is the name of the layer you are looking for...
         var layer = docVarName.layers.itemByName("x");
         alert(layer.name); //optional but provides textual ouput
 
-**Lock/Unlock Layer** ***[Illustrator, InDesign]**
+**Lock/Unlock Layer** **[Illustrator, InDesign]*
           
         docVarName.layers[0].locked = true; //locks top layer
     
-**Name a Layer** ***[Illustrator]**
+**Name a Layer** **[Illustrator]*
 
          //name it when creating it
         var myLayer = docVarName.layers.add({name: "below top layer"});
@@ -177,26 +176,26 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 **New Layer(s)*** (See Create New Layer(s) above)
 
-**Number of Layers** ***[InDesign]***
+**Number of Layers** **[InDesign]**
        
         alert(layer.length);
      
-**Show/Get Name of a Layer** ***[InDesign]***
+**Show/Get Name of a Layer** **[InDesign]**
         
         alert(layer[i].name); //at index i
         //see other method below
 
-**Show/Get Name of a Layer** ***[Illustrator, InDesign, Photoshop]***
+**Show/Get Name of a Layer** **[Illustrator, InDesign, Photoshop]**
         
         alert(layerVarName.name); //get name of a specific layer        
     
-**Visibility of Layer** ***[Illustrator, InDesign]***
+**Visibility of Layer** **[Illustrator, InDesign]**
         
         docVarName.layers[0].visible = false; //turns off top layer visibility
 
 <h2>Layout</h2>
 
-***Margins*** ***[InDesign]***
+***Margins*** **[InDesign]**
            
         var myPage = doc.pages.item(0);
         var myMargin = .5;
@@ -210,20 +209,20 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 <h2>Pages</h2>
     
-**Access Pages** ***[InDesign]***
+**Access Pages** **[InDesign]**
        
         var myPages = *document*.pages;
 
-**Create Page(s)** ***[InDesign]***
+**Create Page(s)** **[InDesign]**
         
         var myNewPage = pages.add();
 
-**Dimensions** ***[InDesign]***
+**Dimensions** **[InDesign]**
        
         docVarName.documentPreferences.pageWidth = "8.5in";
         docVarName.documentPreferences.pageHeight = "11in";
 
-**Number of Pages** ***[InDesign]***
+**Number of Pages** **[InDesign]**
         
         alert(myPages.length);
 
@@ -244,7 +243,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 <h2>Shapes</h2>
 
-**Rectangle** ***[Illustrator]***
+**Rectangle** **[Illustrator]**
 
         //Define rectangle properties
         var rectWidth = 200;    var rectX = 0;
@@ -255,12 +254,12 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
 <h2>Stroke</h2>
     
-**Stroke** ***[Illustrator]***
+**Stroke** **[Illustrator]**
     
         itemVarName.stroked = true; 
         //true: on/show stroke, false: off/no stroke
     
-**Stroke Color** ***[Illustrator]***
+**Stroke Color** **[Illustrator]**
 
         //Create RGB Color: colors range from 0 (0%) to 255 (100%)
         var myColor = new RGBColor();
@@ -279,17 +278,17 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         //applying color to an item
         itemVarName.strokeColor = myColor;
     
-**Stroke Weight/Width** ***[Illustrator]***
+**Stroke Weight/Width** **[Illustrator]**
 
         itemVarName.strokeWidth = 1;
 
 <h2>Swatches</h2>
 
-**Access File Swatches** ***[InDesign]***
+**Access File Swatches** **[InDesign]**
         
         var mySwatches = app.swatches;
 
-**Loop through Swatches, Display Names** ***[InDesign]***
+**Loop through Swatches, Display Names** **[InDesign]**
         
         var mySwatches = app.swatches;
         for(var i=0; i<mySwatches.length; i++){
@@ -298,25 +297,25 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 <h2>Text</h2>
 
-**Create a Text Frame** ***[InDesign]***
+**Create a Text Frame** **[InDesign]**
         
         var newTextFrame = pageVarName.textFrames.add();
 
-**Create a Text Frame** ***[Illustrator]***
+**Create a Text Frame** **[Illustrator]**
         
         var newTextLayer = docVarName.textFrames.add();
 
-**Location and Size of Text Frame** ***[InDesign]***
+**Location and Size of Text Frame** **[InDesign]**
         
         textFrameVarName.geometricBounds = [y1,x1,y2,x2]
         /* y1,x1 = y,x coordinates of the top left corner
            y2,x2 = y,x coordinates of the bottom right corner */
 
-**QR Code** ***[InDesign]***
+**QR Code** **[InDesign]**
        
         textFrameVarName.createPlainQRCode("url for QR Code here");
 
-**Text (Content) of Text Frame (put text into it** ***[InDesign]***
+**Text (Content) of Text Frame (put text into it** **[InDesign]**
 
         
         textFrameVarName.contents = "Your chosen text here";
@@ -325,3 +324,6 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         typically places in the upper, left corner. See "Location
         and Size of Text Frame" above to create text frames of a 
         specific size. 
+
+[! NOTE]
+
