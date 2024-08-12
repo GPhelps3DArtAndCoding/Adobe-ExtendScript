@@ -352,7 +352,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
         var newTextLayer = docVarName.textFrames.add();
 
-**Create a Text Frame and assign Text To It** *[InDesign]*
+**Create a Text Frame and assign Text To It** *[Illustrator]*
 
         function createText(text){
         var textFrame = docVarName.textFrames.add();
