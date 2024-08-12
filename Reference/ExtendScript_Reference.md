@@ -24,7 +24,7 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 ---
 
-#### Document, Creation and Accessing
+### Document, Creation and Accessing
  
 
 **Access Active Document** *[Illustrator, InDesign, Photoshop]*</span>
@@ -88,7 +88,7 @@ The *72 multiplier for width and height, used in come of the code samples below,
 
 ---
 
-#### Document, Naming
+### Document, Naming
   
 **Create, Save, and Name** *[Illustrator]*
 
@@ -120,7 +120,7 @@ The *72 multiplier for width and height, used in come of the code samples below,
 
 ---
 
-#### Layers
+### Layers
 INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 **Access Layer Stack** *[InDesign]*
@@ -191,7 +191,9 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
         docVarName.layers[0].visible = false; //turns off top layer visibility
 
-#### Layout
+---
+
+### Layout
 
 ***Margins*** *[InDesign]*
            
@@ -203,9 +205,10 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
             left: myMargin,
             right: myMargin,
             bottom: myMargin
-            };
+  
+---
 
-#### Pages
+### Pages
     
 **Access Pages** *[InDesign]*
        
@@ -224,7 +227,9 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
         alert(myPages.length);
 
-#### Selections
+---
+
+### Selections
 
 **Access Selected Objects**
         
@@ -239,7 +244,9 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         
         var selectNewestObject = app.activeDocument.selection[x];
 
-#### Shapes
+---
+
+### Shapes
 
 **Rectangle** *[Illustrator]*
 
@@ -249,8 +256,10 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
         //Create a rectangle path item
         var rect = doc.pathItems.rectangle(rectY, rectX, rectWidth, rectHeight);
-        
-#### Stroke
+
+---
+
+### Stroke
     
 **Stroke** *[Illustrator]*
     
@@ -280,6 +289,8 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
         itemVarName.strokeWidth = 1;
 
+---
+
 #### Swatches
 
 **Access File Swatches** *[InDesign]*
@@ -292,6 +303,8 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         for(var i=0; i<mySwatches.length; i++){
             alert(mySwatches[i].name); //returns name of swatch at index i
         }
+
+---
 
 #### Text
 
@@ -314,7 +327,6 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
         textFrameVarName.createPlainQRCode("url for QR Code here");
 
 **Text (Content) of Text Frame (put text into it** *[InDesign]*
-
         
         textFrameVarName.contents = "Your chosen text here";
 
