@@ -328,7 +328,7 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 > [!TIP]
 > Optional information to help a user be more successful.
 
-> [!IMPORTANT]  
+[!IMPORTANT]  
 > Crucial information necessary for users to succeed.
 
 > [!WARNING]  
