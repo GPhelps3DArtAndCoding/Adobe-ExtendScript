@@ -159,7 +159,8 @@ INFO: Layers are a collection (like an array), where the top layer is index 0.
 
 **Create New Layer(s) and Name Layer(s)** *[InDesign]*
 
-        var newLayer = docVarName.layers.add({name: "below top layer"}); //create and name
+        var newLayer = docVarName.layers.add();
+        newLayer.name = "layer name here";
 
 **Create New Sublayer(s) inside a Layer, at index "i"** *[Illustrator]*
 

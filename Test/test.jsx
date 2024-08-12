@@ -14,7 +14,7 @@ function background(){
     background.fillColor = bgFillColor;
     background.setEntirePath([[0,0],[doc.width,0],[doc.width,doc.height],[0,doc.height]]);
     background.stroked = false;
-}
+s}
 background();
 
 
