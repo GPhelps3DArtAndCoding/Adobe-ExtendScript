@@ -120,6 +120,12 @@ The *72 multiplier for width and height, used in come of the code samples below,
 
 ---
 
+### Input
+
+**File Input** 
+
+---
+
 ### Layers
 INFO: Layers are a collection (like an array), where the top layer is index 0.
 
