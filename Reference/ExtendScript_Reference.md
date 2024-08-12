@@ -7,6 +7,7 @@ Gary Phelps 2024 gpmail1@gmail.com
     * <a href="https://www.youtube.com/watch?v=r1WWK7pl6so">Adobe InDesign Scripting Tutorial: Create a Basic Script</a> - Youtube, NT Productions 
 
 ---
+
 #### Variables Within This Guide<br>
   * Anything after "var" is of course a variable declaration.<br>
   * In any section where variables are created, I will use their names in other lines of that section.</br>
@@ -16,7 +17,26 @@ This is all to remove confusion on what is a variable name versus what is an act
 
 ---
 
-#### Basic Commands
+### Backgrounds
+
+**Background, Set Color** *[Illustrator]*
+
+        function background(){
+        var background = docVarName.pathItems.add();
+        background.filled = true;
+        var bgFillColor = new CMYKColor();
+        bgFillColor.cyan = 60;
+        bgFillColor.magenta = 0;
+        bgFillColor.yellow = 20;
+        bgFillColor.black = 0;
+        background.fillColor = bgFillColor;
+        background.setEntirePath([[0,0],[docVarName.width,0],[docVarName.width,doc.height],[0,docVarName.height]]);
+        background.stroked = false;
+        }
+
+---
+
+### Basic Commands
 
 **Alert** *[Illustrator, InDesign, Photoshop]*
 
